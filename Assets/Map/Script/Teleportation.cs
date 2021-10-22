@@ -10,12 +10,18 @@ public class Teleportation : MonoBehaviour
 
     Vector3 telepadPos;
     Vector3 telepadRot;
+    Renderer renderer;
+
+    public Material originalColor;
+    public Material gazedColor;
 
     public float offset = 2f;
 
     // Start is called before the first frame update
     void Start()
     {
+        renderer = GetComponent<Renderer>();
+
         telepadPos = gameObject.transform.position;
         telepadPos.y += offset;
         telepadRot = gameObject.transform.eulerAngles;
@@ -26,21 +32,34 @@ public class Teleportation : MonoBehaviour
         return telepadPos;
     }
 
-
-
     public void OnPointerEnter()
     {
-        DebugText("pointer entered");
-
-        dc.player.transform.position = telepadPos;
-        dc.player.transform.rotation = Quaternion.Euler(telepadRot);
+        SetMaterial(true);
     }
 
     public void OnPointerExit()
     {
-        DebugText("pointer exited");
+        SetMaterial(false);
     }
 
+    public void OnPointerClick()
+    {
+        TeleportPlayer();
+    }
+
+    private void TeleportPlayer()
+    {
+        dc.player.transform.position = telepadPos;
+        dc.player.transform.rotation = Quaternion.Euler(telepadRot);
+    }
+
+    private void SetMaterial(bool gazed)
+    {
+        if(originalColor != null && gazedColor != null)
+        {
+            renderer.material = gazed ? gazedColor : originalColor;
+        }
+    }
 
 
     void DebugText(string debug)
