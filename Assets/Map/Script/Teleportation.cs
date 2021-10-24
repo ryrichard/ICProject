@@ -8,12 +8,14 @@ public class Teleportation : MonoBehaviour
 
     public DataController dc;
 
-    Vector3 telepadPos;
-    Vector3 telepadRot;
+    Vector3 teleExitPos;
+    Vector3 teleExitRot;
     Renderer renderer;
 
     public Material originalColor;
     public Material gazedColor;
+
+    public GameObject exit;
 
     public float offset = 2f;
 
@@ -22,14 +24,23 @@ public class Teleportation : MonoBehaviour
     {
         renderer = GetComponent<Renderer>();
 
-        telepadPos = gameObject.transform.position;
-        telepadPos.y += offset;
-        telepadRot = gameObject.transform.eulerAngles;
+        if(exit)
+        {
+            teleExitPos = exit.transform.position;
+            teleExitPos.y += offset;
+            teleExitRot = exit.transform.eulerAngles;
+        }
+        else
+        {
+            teleExitPos = gameObject.transform.position;
+            teleExitPos.y += offset;
+            teleExitRot = gameObject.transform.localEulerAngles;
+        }
     }
 
     public Vector3 GetLocation()
     {
-        return telepadPos;
+        return teleExitPos;
     }
 
     public void OnPointerEnter()
@@ -49,8 +60,8 @@ public class Teleportation : MonoBehaviour
 
     private void TeleportPlayer()
     {
-        dc.player.transform.position = telepadPos;
-        dc.player.transform.rotation = Quaternion.Euler(telepadRot);
+        dc.player.transform.position = teleExitPos;
+        dc.player.transform.rotation = Quaternion.Euler(teleExitRot);
     }
 
     private void SetMaterial(bool gazed)
