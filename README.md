@@ -10,5 +10,6 @@
 ### To create an informative app that teaches users the importance of the difference sectors of the Intelligence agency.
 
 ## ChangeLog
+### 11/17/21 - Added AR Foundation
 ### 10/24/21 - Created a blueprint for the level layout. Created the "Money Room"
-### 10/22/21 - Added Fredy's package to this build. 
+### 10/22/21 - Added Fredy's package to this build.
