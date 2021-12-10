@@ -35,11 +35,12 @@ public class XRCardboardInputModule : PointerInputModule
     {
         if (pointerEventData == null)
             pointerEventData = new PointerEventData(eventSystem);
-#if UNITY_EDITOR
-        pointerEventData.position = new Vector2(Screen.width / 2, Screen.height / 2);
-#else
-        pointerEventData.position = new Vector2(XRSettings.eyeTextureWidth / 2, XRSettings.eyeTextureHeight / 2);
-#endif
+        //#if UNITY_EDITOR
+        pointerEventData.position = new Vector2((Screen.width * 3) / 4, Screen.height / 2);
+        Debug.Log("pointer pos: " + pointerEventData.position.ToString());
+//#else
+//        pointerEventData.position = new Vector2(XRSettings.eyeTextureWidth / 2, XRSettings.eyeTextureHeight / 2);
+//#endif
         pointerEventData.delta = Vector2.zero;
         var raycastResults = new List<RaycastResult>();
         eventSystem.RaycastAll(pointerEventData, raycastResults);
@@ -54,6 +55,7 @@ public class XRCardboardInputModule : PointerInputModule
         try
         {
             handler = ExecuteEvents.GetEventHandler<IPointerClickHandler>(pointerEventData.pointerEnter);
+            Debug.Log("Looking at " + handler.name);
             var selectable = handler.GetComponent<Selectable>();
             if (selectable && selectable.interactable == false)
                 throw new NullReferenceException();
