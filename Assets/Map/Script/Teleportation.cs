@@ -6,7 +6,7 @@ public class Teleportation : MonoBehaviour
 {
     [TextArea] string notes = "This is script is for teleporting players to this position. This will be attached to a teleportation pad. When players look at said teleportation pad, their position will change to this teleportation pad's position. Players y position will need to be alterated a bit so they don't clip through the floor.";
 
-    public DataController dc;
+    DataController dc;
 
     Vector3 teleExitPos;
     Vector3 teleExitRot;
@@ -22,7 +22,12 @@ public class Teleportation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        dc = FindObjectOfType<DataController>();
+        if (!dc)
+            DebugText("Error: DataController not found");
+
         renderer = GetComponent<Renderer>();
+        originalColor = renderer.material;
 
         if(exit)
         {
@@ -71,7 +76,6 @@ public class Teleportation : MonoBehaviour
             renderer.material = gazed ? gazedColor : originalColor;
         }
     }
-
 
     void DebugText(string debug)
     {

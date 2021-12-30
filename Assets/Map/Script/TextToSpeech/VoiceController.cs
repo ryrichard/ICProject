@@ -33,12 +33,12 @@ public class VoiceController : MonoBehaviour
         TextToSpeech.instance.StopSpeak();
     }
 
-    void OnSpeakStart()
+    public void OnSpeakStart()
     {
         Debug.Log("Talking started...");
     }
 
-    void OnSpeakStop()
+    public void OnSpeakStop()
     {
         Debug.Log("Talking stopped");
     }

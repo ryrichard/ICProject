@@ -37,7 +37,6 @@ public class XRCardboardInputModule : PointerInputModule
             pointerEventData = new PointerEventData(eventSystem);
         //#if UNITY_EDITOR
         pointerEventData.position = new Vector2((Screen.width * 3) / 4, Screen.height / 2);
-        Debug.Log("pointer pos: " + pointerEventData.position.ToString());
 //#else
 //        pointerEventData.position = new Vector2(XRSettings.eyeTextureWidth / 2, XRSettings.eyeTextureHeight / 2);
 //#endif

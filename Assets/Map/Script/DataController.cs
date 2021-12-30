@@ -6,13 +6,12 @@ public class DataController : MonoBehaviour
 {
     DataController dc;
 
-    [SerializeField]
-    GameObject Player;
+    [SerializeField] VoiceController vc;
 
     public GameObject player
     {
-        set { Player = player; }
-        get { return Player; }
+        private set;
+        get;
     }
 
     //singleton - makes sure this data is the only one to exist in any scene

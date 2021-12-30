@@ -188,7 +188,6 @@ GameObject:
   - component: {fileID: 271976884790048275}
   - component: {fileID: 271976884790048278}
   - component: {fileID: 271976884790048277}
-  - component: {fileID: 271976884790048276}
   - component: {fileID: 271976884790048279}
   m_Layer: 0
   m_Name: RightCamera
@@ -263,24 +262,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271976884790048274}
   m_Enabled: 1
---- !u!114 &271976884790048276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 271976884790048274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f9d8e5fc39254339be40ce535550303, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  note: to make things less complicated, dont change the obj's color when looked
-    on/off. Just change crosshair's color when looking at interactable object
-  tmp: {fileID: 0}
-  curInter: {fileID: 0}
-  newInter: {fileID: 0}
-  maxDistance: 100
 --- !u!114 &271976884790048279
 MonoBehaviour:
   m_ObjectHideFlags: 0
