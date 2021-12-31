@@ -25,7 +25,7 @@ public class Speaking : MonoBehaviour
     {
         player = _player;
         talkingToPlayer = true;
-        dbox.CreateDialogBox(gameObject);
+        //dbox.CreateDialogBox(gameObject);
     }
 
     public void StopTalkingToPlayer()

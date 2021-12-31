@@ -14,46 +14,20 @@ public class DialogBox : MonoBehaviour
     }
 
     [SerializeField] GameObject prefabDialogBox;
+
     TextMeshProUGUI tmp;
     float timeForDialogBox = 1.5f;
-    float dialogOffSet;
+    float dialogOffSet = 1f;
 
-    private void Awake()
+    public void CreateDialogBox()
     {
-        tmp = prefabDialogBox.GetComponentInChildren<TextMeshProUGUI>();
-    }
-
-    public void CreateDialogBox(GameObject obj)
-    {
-        Vector3 pos = obj.transform.position;
-        pos.y += obj.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().bounds.size.y + 0.5f;
-        dialogBox = Instantiate(prefabDialogBox, pos, obj.transform.rotation);
+        Vector3 pos = gameObject.transform.position;
+        pos.y += gameObject.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().bounds.size.y + dialogOffSet;
+        dialogBox = Instantiate(prefabDialogBox, pos, Quaternion.identity);
     }
 
     public void DestroyDialogBox()
     {
-        ClearText();
         Destroy(dialogBox);
-    }
-
-    public void FindDialog()
-    {
-        //Find dialog somewhere
-        LoadText("Test");
-    }
-
-    public void LoadText(string text)
-    {
-        tmp.text = text;
-    }
-
-    public void WaitBeforeNextLoad()
-    {
-
-    }
-
-    public void ClearText()
-    {
-        tmp.text = "";
     }
 }

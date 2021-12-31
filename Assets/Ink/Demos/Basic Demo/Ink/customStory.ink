@@ -7,4 +7,4 @@
 -   So the creator can display sentences...<>
 -   in bit size information
     *[Continue]
--   End really annoying
+-   so it can end really annoyingly
