@@ -13,7 +13,7 @@ public class PlayerLook : MonoBehaviour
     private const float _maxDistance = 100f;
     private GameObject _gazedAtObject = null;
 
-    //disables this script if not in editor. 
+    //disables this script if not in editor.
     void Awake()
     {
         if(!Application.isEditor)
@@ -41,29 +41,29 @@ public class PlayerLook : MonoBehaviour
 
         // Casts ray towards camera's forward direction, to detect if a GameObject is being gazed
         // at.
-        //RaycastHit hit;
-        //if (Physics.Raycast(transform.position, transform.forward, out hit, _maxDistance))
-        //{
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit, _maxDistance))
+        {
         //    // GameObject detected in front of the camera.
-        //    if (_gazedAtObject != hit.transform.gameObject)
-        //    {
+            if (_gazedAtObject != hit.transform.gameObject)
+            {
         //        // New GameObject.
-        //        _gazedAtObject?.SendMessage("OnPointerExit");
-        //        _gazedAtObject = hit.transform.gameObject;
-        //        _gazedAtObject.SendMessage("OnPointerEnter");
-        //    }
-        //}
-        //else
-        //{
+                _gazedAtObject?.SendMessage("OnPointerExit");
+                _gazedAtObject = hit.transform.gameObject;
+                _gazedAtObject.SendMessage("OnPointerEnter");
+            }
+        }
+        else
+        {
         //    // No GameObject detected in front of the camera.
-        //    _gazedAtObject?.SendMessage("OnPointerExit");
-        //    _gazedAtObject = null;
-        //}
+            _gazedAtObject?.SendMessage("OnPointerExit");
+            _gazedAtObject = null;
+        }
 
         // Checks for screen touches.
-        //if (Google.XR.Cardboard.Api.IsTriggerPressed)
-        //{
-        //    _gazedAtObject?.SendMessage("OnPointerClick");
-        //}
+        if (Google.XR.Cardboard.Api.IsTriggerPressed)
+        {
+            _gazedAtObject?.SendMessage("OnPointerClick");
+        }
     }
 }
