@@ -8,6 +8,7 @@ TagManager:
   - Conveyor
   - HallTrigger
   - DataController
+  - NPC
   layers:
   - Default
   - TransparentFX
