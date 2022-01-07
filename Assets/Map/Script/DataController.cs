@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DataController : MonoBehaviour
 {
     DataController dc;
+    public static VoiceController vc
+    {
+        private set;
+        get;
+    }
 
-    [SerializeField] VoiceController vc;
-
-    public GameObject player
+    [SerializeField] public static GameObject player
     {
         private set;
         get;

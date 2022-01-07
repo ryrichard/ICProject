@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class NPCFacingPlayer : MonoBehaviour
 {
-    DataController dc;
+    //DataController dc;
     GameObject player;
 
     private void Awake()
     {
-        if(dc)
-            player = dc.player;
+        player = DataController.player;
     }
 
     private void Update()

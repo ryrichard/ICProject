@@ -7,8 +7,8 @@ using TMPro;
 // This is a super bare bones example of how to play and display a ink story in Unity.
 public class CreateDialogBox : MonoBehaviour
 {
-	[SerializeField]
-	private DataController dc;
+	//[SerializeField]
+	//private DataController dc;
 
 	[SerializeField]
 	private TextAsset inkJSONAsset = null;
@@ -27,8 +27,8 @@ public class CreateDialogBox : MonoBehaviour
 
 	void Awake()
 	{
-		if(dc == null)
-			dc = GameObject.FindGameObjectWithTag("DataController").GetComponent<DataController>();
+		//if(dc == null)
+		//	dc = GameObject.FindGameObjectWithTag("DataController").GetComponent<DataController>();
 		RemoveChildren();
 		StartStory();
 	}
@@ -128,7 +128,7 @@ public class CreateDialogBox : MonoBehaviour
 
     private void Update()
     {
-		canvas.transform.LookAt(dc.player.transform);
+		canvas.transform.LookAt(DataController.player.transform);
 		canvas.transform.Rotate(0f, 180f, 0f);
 	}
 }

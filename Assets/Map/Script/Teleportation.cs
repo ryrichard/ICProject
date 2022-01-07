@@ -6,11 +6,12 @@ public class Teleportation : MonoBehaviour
 {
     [TextArea] string notes = "This is script is for teleporting players to this position. This will be attached to a teleportation pad. When players look at said teleportation pad, their position will change to this teleportation pad's position. Players y position will need to be alterated a bit so they don't clip through the floor.";
 
-    DataController dc;
+    //DataController dc;
 
     Vector3 teleExitPos;
     Vector3 teleExitRot;
     Renderer renderer;
+    bool destroyAfterUse = false; //destroys teleportpad after user uses it to prevent user from backtracking.
 
     public Material originalColor;
     public Material gazedColor;
@@ -22,9 +23,9 @@ public class Teleportation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dc = FindObjectOfType<DataController>();
-        if (!dc)
-            DebugText("Error: DataController not found");
+        //dc = FindObjectOfType<DataController>();
+        //if (!dc)
+        //    DebugText("Error: DataController not found");
 
         renderer = GetComponent<Renderer>();
         originalColor = renderer.material;
@@ -38,7 +39,6 @@ public class Teleportation : MonoBehaviour
         else
         {
             teleExitPos = gameObject.transform.position;
-            teleExitPos.y += offset;
             teleExitRot = gameObject.transform.localEulerAngles;
         }
     }
@@ -65,8 +65,11 @@ public class Teleportation : MonoBehaviour
 
     private void TeleportPlayer()
     {
-        dc.player.transform.position = teleExitPos;
-        dc.player.transform.rotation = Quaternion.Euler(teleExitRot);
+        if(!exit)
+            teleExitPos.y = DataController.player.transform.position.y;
+
+        DataController.player.transform.position = teleExitPos;
+        //DataController.player.transform.rotation = Quaternion.Euler(teleExitRot);
     }
 
     private void SetMaterial(bool gazed)

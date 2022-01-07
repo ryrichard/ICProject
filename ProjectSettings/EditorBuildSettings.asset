@@ -8,9 +8,21 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Map/Scenes/LevelLayout.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Map/Scenes/TestRoom.unity
     guid: 4ae402b20fb974e90a9efe64e923271b
+  - enabled: 1
+    path: Assets/Map/Scenes/Road.unity
+    guid: e5455bd6c9701407cbc504ceb45fa46f
+  - enabled: 1
+    path: Assets/Map/Scenes/Village.unity
+    guid: 3e93c52f5858b43989a16fdcfb81b94e
+  - enabled: 1
+    path: Assets/Map/Scenes/Armory.unity
+    guid: cf4478ae27d6047479bbe6ec463fc48d
+  - enabled: 1
+    path: Assets/Map/Scenes/Castle.unity
+    guid: c6063c612ae824b7eaf5b24e80579f60
   m_configObjects:
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: ead1b60955de647c48a8db3e1e2236a7, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0b71a6cdf21ab4caca348838dc75c4f2, type: 2}
