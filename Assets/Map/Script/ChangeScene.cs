@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    [SerializeField] int sceneVal;
+    [SerializeField] string SceneName;
 
     public void OnPointerEnter()
     {
@@ -14,14 +14,12 @@ public class ChangeScene : MonoBehaviour
 
     public void OnPointerClick()
     {
-        TeleportPlayer();
+        MoveToNewScene();
     }
 
-    void TeleportPlayer()
+    void MoveToNewScene()
     {
-        if (sceneVal != 0)
-            SceneManager.LoadScene(sceneVal);
-        else
-            Debug.Log("SceneVal should not equal 0"); //subject to change since, scene[0] should be the hub level
+        DataController.GetPlayerLastPosAndScene();
+        SceneManager.LoadScene(SceneName);
     }
 }

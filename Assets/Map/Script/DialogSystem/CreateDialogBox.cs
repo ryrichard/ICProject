@@ -10,8 +10,7 @@ public class CreateDialogBox : MonoBehaviour
 	//[SerializeField]
 	//private DataController dc;
 
-	[SerializeField]
-	private TextAsset inkJSONAsset = null;
+	public TextAsset inkJSONAsset = null;
 	public Story story;
 
 	[SerializeField]
@@ -23,18 +22,18 @@ public class CreateDialogBox : MonoBehaviour
 	[SerializeField]
 	private Button buttonPrefab = null;
 
-	public static event Action<Story> OnCreateStory;
+	public event Action<Story> OnCreateStory;
 
 	void Awake()
 	{
 		//if(dc == null)
 		//	dc = GameObject.FindGameObjectWithTag("DataController").GetComponent<DataController>();
 		RemoveChildren();
-		StartStory();
+		Invoke("StartStory", 0.5f);
 	}
 
 	// Creates a new Story object with the compiled story which we can then play!
-	void StartStory()
+	public void StartStory()
 	{
 		story = new Story(inkJSONAsset.text);
 		if (OnCreateStory != null) OnCreateStory(story);
@@ -73,15 +72,18 @@ public class CreateDialogBox : MonoBehaviour
 				});
 			}
 		}
-		// If we've read all the content and there's no choices, the story is finished!
-		else
-		{
-			Button choice = CreateChoiceView("End of story.\nRestart?");
-			choice.onClick.AddListener(delegate {
-				StartStory();
-			});
-		}
-	}
+        // If we've read all the content and there's no choices, the story is finished!
+        else
+        {
+			//Button choice = CreateChoiceView("End of story.\nRestart?");
+			//choice.onClick.AddListener(delegate
+			//{
+			//    StartStory();
+			//});
+			RemoveChildren();
+			Destroy(gameObject);
+        }
+    }
 
 	// When we click the choice button, tell the story to choose that choice!
 	void OnClickChoiceButton(Choice choice)

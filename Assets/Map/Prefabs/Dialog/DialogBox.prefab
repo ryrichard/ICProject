@@ -30,7 +30,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2894949041579776041}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.032846402, y: 0.70497626, z: -0.032719336, w: 0.70771396}
   m_LocalPosition: {x: 0, y: 0, z: -5.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -39,7 +39,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 8.77, y: 2.27}
+  m_AnchoredPosition: {x: 8.77002, y: 2.269989}
   m_SizeDelta: {x: 4, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2894949041579776037
@@ -153,8 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60fdd9256ab014ab8ac1252bb24ebc05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dc: {fileID: 0}
-  inkJSONAsset: {fileID: 4900000, guid: 130a814a56e934e46b8436bdd684c6f2, type: 3}
+  inkJSONAsset: {fileID: 0}
   canvas: {fileID: 2894949041579776037}
   textPrefab: {fileID: 7598774405158497123, guid: 3e53be4a161144f06ad39f09f945636a, type: 3}
   buttonPrefab: {fileID: 3499051332755079093, guid: 548eca401c383450b84a9c941a6d5214, type: 3}
