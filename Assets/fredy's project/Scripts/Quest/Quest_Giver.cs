@@ -15,6 +15,9 @@ public class Quest_Giver : MonoBehaviour
     public Text description;
     public Text experienceText;
 
+    public Text step1, step2, step3;
+    public Text step1des, step2des, step3des;
+
 
     public void OpenQuestWIndow()
     {
@@ -28,8 +31,10 @@ public class Quest_Giver : MonoBehaviour
     public void AcceptQuest()
     {
         questWindow.SetActive(false);
-        quest.isActive = true;
+        quest.QuestIsActive = true;
         //give quest to player
         player.quest = quest;
     }
+
+
 }

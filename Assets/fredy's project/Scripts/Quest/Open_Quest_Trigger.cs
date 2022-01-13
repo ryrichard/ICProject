@@ -32,7 +32,6 @@ public class Open_Quest_Trigger : MonoBehaviour
     public void QuestWindowActive()
     {
 
-
         Debug.Log("Triggered");
         AvaQuestWindow.SetActive(false);
         
