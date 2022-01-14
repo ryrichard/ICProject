@@ -5,7 +5,7 @@ using Ink.Runtime;
 using TMPro;
 
 // This is a super bare bones example of how to play and display a ink story in Unity.
-public class CreateDialogBox : MonoBehaviour
+public class CreateDialogBox2 : MonoBehaviour
 {
 	//[SerializeField]
 	//private DataController dc;
@@ -81,7 +81,7 @@ public class CreateDialogBox : MonoBehaviour
 			//    StartStory();
 			//});
 
-			GetComponentInParent<DialogBox>().EndOfDialog();
+			//Dialogue ends here
 			RemoveChildren();
 			Destroy(gameObject);
         }
