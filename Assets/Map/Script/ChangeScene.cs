@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     [SerializeField] string SceneName;
+    public string EnterMessage;
 
     public void OnPointerEnter()
     {
-        //do something
+        Debug.Log(EnterMessage);
     }
 
     public void OnPointerClick()

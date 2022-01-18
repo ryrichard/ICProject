@@ -6,6 +6,8 @@ using UnityEngine.Events;
 
 public class OnInteraction : MonoBehaviour
 {
+    [TextArea] string note = "Don't know why this still exist. Maybe for future reference if I need stuff in here. Otherwise, just use event trigger";
+
     [SerializeField]
     UnityEvent onStartHover = default;
     [SerializeField]
