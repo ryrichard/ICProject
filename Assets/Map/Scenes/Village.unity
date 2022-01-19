@@ -3806,6 +3806,9 @@ GameObject:
   - component: {fileID: 621484003}
   - component: {fileID: 631028913}
   - component: {fileID: 621551198}
+  - component: {fileID: 621551201}
+  - component: {fileID: 621551200}
+  - component: {fileID: 621551199}
   m_Layer: 0
   m_Name: SF_Character_Human_Wizard
   m_TagString: Untagged
@@ -3825,6 +3828,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f7afe3f11fb4f98b935c5cf6e4946f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &621551199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621551197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3983cb2b72d41279834eed5bc139fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkJSONAsset: {fileID: 4900000, guid: 43b7d290c18f34852962c178e6ec41f5, type: 3}
+  prefabDialogBox: {fileID: 2894949041579776041, guid: 9185f1579078d4c21a21cbd102a96dc7, type: 3}
+--- !u!114 &621551200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621551197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 621551199}
+          m_TargetAssemblyTypeName: DialogBox, Assembly-CSharp
+          m_MethodName: CreateDialogBox
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!65 &621551201
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621551197}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 1}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1 &621551633
 GameObject:
   m_ObjectHideFlags: 0
@@ -6170,6 +6229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Road
+  EnterMessage: 
 --- !u!114 &919491232
 MonoBehaviour:
   m_ObjectHideFlags: 0
