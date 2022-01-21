@@ -33,6 +33,14 @@ public class Quest
         return questEvent;
     }
 
+    // QuestEvent constructor for location step quest
+    public QuestEvent AddQuestEvent(string n, string d, GameObject l)
+    {
+        QuestEvent questEvent = new QuestEvent(n, d,l);
+        questEvents.Add(questEvent);
+        return questEvent;
+    }
+
     public void AddPath(string fromQuestEvent, string toQuestEvent)
     {
         QuestEvent from = FindQuestEvent(fromQuestEvent);
@@ -45,6 +53,7 @@ public class Quest
         }
     }
 
+    
     QuestEvent FindQuestEvent(string id)
     {
         foreach(QuestEvent n in questEvents)
@@ -69,6 +78,7 @@ public class Quest
         }
     }
 
+    //Console check
     public void PrintPath()
     {
         foreach(QuestEvent n in questEvents)

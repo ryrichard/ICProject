@@ -17,9 +17,13 @@ public class QuestEvent {
     public string id;
     public int order = -1;
     public EventStatus status;
+    public Checkmark button;
+
+    public GameObject location;
 
     public List<QuestPath> pathlist = new List<QuestPath>();
 
+    //default constructor
     public QuestEvent(string n, string d)
     {
         id = Guid.NewGuid().ToString();
@@ -28,9 +32,20 @@ public class QuestEvent {
         status = EventStatus.wating;
     }
 
+    //contructor for QuestEvent step that requires a location
+    public QuestEvent(string n, string d, GameObject loc)
+    {
+        id = Guid.NewGuid().ToString();
+        stepTitle = n;
+        description = d;
+        status = EventStatus.wating;
+        location = loc;
+    }
+
     public void UpdateQuestEvent(EventStatus stat)
     {
         status = stat;
+        button.UpdateImage(stat);
     }
 
     public string GetId()
