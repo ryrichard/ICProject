@@ -29,7 +29,7 @@ public class Quest_Manger : MonoBehaviour
 
     //Event location objects
     public GameObject A;
-    
+    public GameObject B;
 
     void Start()
     {
@@ -55,11 +55,13 @@ public class Quest_Manger : MonoBehaviour
         Checkmark checkMarkBox = createBox(a).GetComponent<Checkmark>();
         A.GetComponent<QuestLocation>().SetUp(this, a, checkMarkBox);
         checkMarkBox = createBox(b).GetComponent<Checkmark>();
+        B.GetComponent<QuestLocation>().SetUp(this, b, checkMarkBox);
         checkMarkBox = createBox(c).GetComponent<Checkmark>();
         checkMarkBox = createBox(d).GetComponent<Checkmark>();
         checkMarkBox = createBox(e).GetComponent<Checkmark>();
 
         Debug.Log(a.status);
+
 
 
 
