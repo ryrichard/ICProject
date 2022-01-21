@@ -10,7 +10,7 @@ public class CreateDialogBox : MonoBehaviour
 	//[SerializeField]
 	//private DataController dc;
 
-	public TextAsset inkJSONAsset = null;
+	public TextAsset inkJSONAsset;
 	public Story story;
 
 	[SerializeField]
@@ -80,6 +80,8 @@ public class CreateDialogBox : MonoBehaviour
 			//{
 			//    StartStory();
 			//});
+
+			GetComponentInParent<DialogBox>().EndOfDialog();
 			RemoveChildren();
 			Destroy(gameObject);
         }

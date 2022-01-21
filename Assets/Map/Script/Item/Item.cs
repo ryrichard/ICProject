@@ -2,15 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Item Name")]
-public class Item: ScriptableObject
+public class Item : MonoBehaviour
 {
-    public new string name;
-    public string description;
+    public ItemInfo itemInfo;
+    public bool destroyItem; //set to true if item is being "picked up" to destroy item
 
-    public void Print()
+    public void OnPointerEnter()
     {
-        Debug.Log("Name : " + name
-            + "\nDescription: " + description);
+        GetItemInfo();
     }
+
+    public void OnPointerClick()
+    {
+        DestroyItem();
+    }
+
+    void GetItemInfo()
+    {
+        Debug.Log(itemInfo.name);
+    }
+
+    void DestroyItem()
+    {
+        if (destroyItem)
+            Destroy(gameObject);
+    }
+
 }

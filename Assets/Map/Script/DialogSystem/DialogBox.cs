@@ -14,7 +14,8 @@ public class DialogBox : MonoBehaviour
         get;
         private set;
     }
-    [SerializeField] private TextAsset inkJSONAsset = null;
+
+    [SerializeField] private TextAsset inkJSONAsset;
     [SerializeField] GameObject prefabDialogBox;
     TextMeshProUGUI tmp;
     float timeForDialogBox = 1.5f;
@@ -33,12 +34,13 @@ public class DialogBox : MonoBehaviour
         Vector3 pos = gameObject.transform.position;
         pos.y += gameObject.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().bounds.size.y + dialogOffSet;
         dialogBox = Instantiate(prefabDialogBox, pos, Quaternion.identity);
-        prefabDialogBox.GetComponent<CreateDialogBox>().inkJSONAsset = inkJSONAsset;
+        dialogBox.transform.SetParent(gameObject.transform, true);
+        dialogBox.GetComponent<CreateDialogBox>().inkJSONAsset = inkJSONAsset;
     }
 
-    public void DestroyDialogBox()
+    public void EndOfDialog()
     {
-        Destroy(dialogBox);
+        Debug.Log("End of dialog");
         bc.enabled = true;
     }
 }
