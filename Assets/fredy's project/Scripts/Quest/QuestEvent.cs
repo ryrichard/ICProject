@@ -46,6 +46,7 @@ public class QuestEvent {
     {
         status = stat;
         button.UpdateImage(stat);
+        
     }
 
     public string GetId()
