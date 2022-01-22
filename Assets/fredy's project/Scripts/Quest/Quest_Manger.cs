@@ -38,6 +38,7 @@ public class Quest_Manger : MonoBehaviour
     public GameObject A;
     public GameObject B;
 
+    //singleton setup
     private void Awake()
     {
         if (qm != null && qm != this)

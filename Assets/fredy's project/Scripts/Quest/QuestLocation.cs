@@ -5,10 +5,25 @@ using UnityEngine;
 //This class checks whether the player has arrived to a location
 public class QuestLocation : MonoBehaviour
 {
+    public static QuestLocation ql
+    {
+        private set;
+        get;
+    }
+
     public QuestEvent qEvent;
     public Quest_Manger qManager;
     public Checkmark cButton;
 
+    private void Awake()
+    {
+        if (ql != null && ql != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+            ql = this;
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
