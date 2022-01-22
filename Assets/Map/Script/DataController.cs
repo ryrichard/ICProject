@@ -24,6 +24,11 @@ public class DataController : MonoBehaviour
         get;
     }
 
+    public static string sceneName
+    {
+        get { return SceneManager.GetActiveScene().name; }
+    }
+
     static Dictionary<string, Vector3> lastSceneAndPos = new Dictionary<string, Vector3>(); //records players last position in x scene
 
     [SerializeField] PhysicsRaycaster pr;
