@@ -5,6 +5,13 @@ using UnityEngine;
 [System.Serializable]
 public class Quest_Manger : MonoBehaviour 
 {
+    //singleton
+    public static Quest_Manger qm
+    {
+        private set;
+        get;
+    }
+
     public GoalType goalType;
     public int required_ammount;
     public int current_ammount;
@@ -30,6 +37,16 @@ public class Quest_Manger : MonoBehaviour
     //Event location objects
     public GameObject A;
     public GameObject B;
+
+    private void Awake()
+    {
+        if (qm != null && qm != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+            qm = this;
+    }
 
     void Start()
     {
