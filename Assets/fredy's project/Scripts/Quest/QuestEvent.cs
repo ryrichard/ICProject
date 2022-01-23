@@ -8,7 +8,7 @@ public class QuestEvent {
     public enum EventStatus
     {
         wating, //not yet completed but can't be worked on cause there's a prerequisite event
-        current, // the one the player should bve trying to achieve
+        current, // the one the player should be trying to achieve
         done // has been achieved
     };
 
@@ -19,7 +19,14 @@ public class QuestEvent {
     public EventStatus status;
     public Checkmark button;
 
+
+    // gameobject for location step
     public GameObject location;
+    //gameObject for gather step
+    public GameObject item;
+    //gameObject for TalkTo step
+    public GameObject npc;
+
 
     public List<QuestPath> pathlist = new List<QuestPath>();
 
@@ -41,6 +48,8 @@ public class QuestEvent {
         status = EventStatus.wating;
         location = loc;
     }
+
+   
 
     public void UpdateQuestEvent(EventStatus stat)
     {

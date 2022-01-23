@@ -4,23 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //public int health = 100;
-    //public int experience = 0;
+    public GameObject armor;
 
     public Quest quest;
 
-    public void Gather()
-    {
-        if (quest.QuestIsActive)
-        {
-            quest.goal.ItemGathered();
-            if (quest.goal.isReached())
-            {
-                //experience += quest.experienceReward;
-                quest.Quest_Completed(); //questStepComplete();
-            }
-        }
-    }
+    
 
 
   
