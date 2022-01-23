@@ -8,11 +8,12 @@ public class QuestLocation : MonoBehaviour
     public QuestEvent qEvent;
     public Quest_Manger qManager;
     public Checkmark cButton;
+    public Player player;
 
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Location Trigger");
+       
         //if this object collides with anything else that is not the player, dont do anything
         if (collision.gameObject.tag != "Player") return;
 
@@ -22,6 +23,7 @@ public class QuestLocation : MonoBehaviour
         else
         {
             //to update these variables in the event manager
+            Debug.Log("Location Trigger");
             qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             cButton.UpdateImage(QuestEvent.EventStatus.done);
             qManager.UpdateQuestOnCompletion(qEvent);

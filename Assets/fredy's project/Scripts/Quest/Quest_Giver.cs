@@ -11,20 +11,18 @@ public class Quest_Giver : MonoBehaviour
     
     public GameObject questWindow;
 
+    public GameObject questTracker;
+
     public Text titleText;
     public Text description;
-    public Text experienceText;
-
-    public Text step1, step2, step3;
-    public Text step1des, step2des, step3des;
-
+ 
 
     public void OpenQuestWIndow()
     {
         questWindow.SetActive(true);
         titleText.text = quest.title;
         description.text = quest.description;
-        //experienceText.text = quest.experienceReward.ToString();
+        
 
     }
 
@@ -34,6 +32,8 @@ public class Quest_Giver : MonoBehaviour
         quest.QuestIsActive = true;
         //give quest to player
         player.quest = quest;
+        questTracker.SetActive(true);
+        
     }
 
 

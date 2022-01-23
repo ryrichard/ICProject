@@ -13,7 +13,7 @@ public class Quest
     
     //public GameObject checkmark;
 
-   public Quest_Manger goal;
+   //public Quest_Manger goal;
 
     public void Quest_Completed()
     {
@@ -24,7 +24,7 @@ public class Quest
     public List<QuestEvent> questEvents = new List<QuestEvent>();
     
 
-    public Quest() { }
+    public Quest() {}
 
     public QuestEvent AddQuestEvent(string n, string d)
     {
@@ -33,13 +33,15 @@ public class Quest
         return questEvent;
     }
 
-    // QuestEvent constructor for location step quest
+    // QuestEvent for location step quest
     public QuestEvent AddQuestEvent(string n, string d, GameObject l)
     {
         QuestEvent questEvent = new QuestEvent(n, d,l);
         questEvents.Add(questEvent);
         return questEvent;
     }
+
+    //will need a different QuestEvent for NPC dialog and object collection//
 
     public void AddPath(string fromQuestEvent, string toQuestEvent)
     {
