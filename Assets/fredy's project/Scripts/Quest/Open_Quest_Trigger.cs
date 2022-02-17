@@ -9,6 +9,14 @@ public class Open_Quest_Trigger : MonoBehaviour
 
     public Quest_Giver questWindow;
 
+    private BoxCollider bc;
+
+    /*
+    private void Awake()
+    {
+        bc = gameObject.GetComponent<BoxCollider>();
+    }*/
+
 
     public void OnTriggerEnter(Collider other)
     {
@@ -19,7 +27,7 @@ public class Open_Quest_Trigger : MonoBehaviour
         }
     }
 
-    
+    /*
     public void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -27,14 +35,13 @@ public class Open_Quest_Trigger : MonoBehaviour
             AvaQuestWindow.SetActive(false);
         }
 
-    }
+    }*/
 
     public void QuestWindowActive()
     {
 
         Debug.Log("Triggered");
         AvaQuestWindow.SetActive(false);
-        
         
     }
 }

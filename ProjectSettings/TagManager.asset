@@ -9,6 +9,8 @@ TagManager:
   - HallTrigger
   - DataController
   - NPC
+  - Location
+  - QuestManager
   layers:
   - Default
   - TransparentFX

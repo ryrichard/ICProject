@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class Quest_Manger : MonoBehaviour 
@@ -12,9 +13,13 @@ public class Quest_Manger : MonoBehaviour
         get;
     }
 
+    
+
     public GoalType goalType;
     public int required_ammount;
     public int current_ammount;
+
+    public ChangeScene cs;
 
     public bool isReached()
     {
@@ -38,6 +43,8 @@ public class Quest_Manger : MonoBehaviour
     public GameObject A;
     public GameObject B;
 
+   
+
     //singleton setup
     private void Awake()
     {
@@ -47,10 +54,20 @@ public class Quest_Manger : MonoBehaviour
         }
         else
             qm = this;
+
+        
     }
 
     void Start()
     {
+        //singleton//
+        GameObject.DontDestroyOnLoad(qm); //doesn't destroy quest manager when changing scenes
+
+
+        //find location
+        
+
+        
         //create each event
         QuestEvent a = quest.AddQuestEvent("Step 1-", "Description 1", A);
         QuestEvent b = quest.AddQuestEvent("Step 2-", "Description 2");
@@ -72,22 +89,52 @@ public class Quest_Manger : MonoBehaviour
         //in the button prefab and places it into the newly created checkMarkBox button.
         Checkmark checkMarkBox = createBox(a).GetComponent<Checkmark>();
         A.GetComponent<QuestLocation>().SetUp(this, a, checkMarkBox);
-        checkMarkBox = createBox(b).GetComponent<Checkmark>();
-        B.GetComponent<QuestLocation>().SetUp(this, b, checkMarkBox);
-        checkMarkBox = createBox(c).GetComponent<Checkmark>();
+
+        createBox(b).GetComponent<Checkmark>(); 
+        B.GetComponent<QuestDialog>().SetUp(this, b, checkMarkBox);
+
+        /*checkMarkBox = createBox(c).GetComponent<Checkmark>();
         checkMarkBox = createBox(d).GetComponent<Checkmark>();
         checkMarkBox = createBox(e).GetComponent<Checkmark>();
-
-        Debug.Log(a.status);
-
-
-
+        */
+        Debug.Log(a.status);//check status of first button
 
         quest.PrintPath();
 
-
-
         
+    }
+
+    private void Update()
+    {
+        /*
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Village"))
+        {
+            
+            QuestEvent a = quest.AddQuestEvent("Step 1-", "Description 1", A);
+            QuestEvent b = quest.AddQuestEvent("Step 2-", "Description 2");
+            QuestEvent c = quest.AddQuestEvent("Step 3-", "Description 3");
+            QuestEvent d = quest.AddQuestEvent("Step 4-", "Description 4");
+            QuestEvent e = quest.AddQuestEvent("Step 5-", "Description 5");
+
+            quest.AddPath(a.GetId(), b.GetId());
+            quest.AddPath(c.GetId(), d.GetId());
+            quest.AddPath(d.GetId(), e.GetId());
+
+            quest.BFS(a.GetId());
+
+            Checkmark checkMarkBox = createBox(a).GetComponent<Checkmark>();
+            A.GetComponent<QuestLocation>().SetUp(this, a, checkMarkBox);
+            createBox(b).GetComponent<Checkmark>();
+            checkMarkBox = createBox(c).GetComponent<Checkmark>();
+            checkMarkBox = createBox(d).GetComponent<Checkmark>();
+            checkMarkBox = createBox(e).GetComponent<Checkmark>();
+        }*/
+        
+    }
+
+    void OnDestroy()
+    {
+        Debug.Log("Quest Manager was destroyed");
     }
 
     GameObject createBox(QuestEvent evnt){
@@ -115,6 +162,8 @@ public class Quest_Manger : MonoBehaviour
             }
         }
     }
+
+  
 
     
 

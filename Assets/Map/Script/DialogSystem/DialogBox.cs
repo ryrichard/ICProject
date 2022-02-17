@@ -21,8 +21,10 @@ public class DialogBox : MonoBehaviour
     float timeForDialogBox = 1.5f;
     float dialogOffSet = 1f;
 
+    
     BoxCollider bc;
 
+    
     private void Awake()
     {
         bc = gameObject.GetComponent<BoxCollider>();
@@ -36,8 +38,9 @@ public class DialogBox : MonoBehaviour
         dialogBox = Instantiate(prefabDialogBox, pos, Quaternion.identity);
         dialogBox.transform.SetParent(gameObject.transform, true);
         dialogBox.GetComponent<CreateDialogBox>().inkJSONAsset = inkJSONAsset;
+        
     }
-
+    
     public void EndOfDialog()
     {
         Debug.Log("End of dialog");

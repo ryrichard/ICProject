@@ -7,9 +7,25 @@ public class Player : MonoBehaviour
     public GameObject armor;
 
     public Quest quest;
-
     
+    private Player player;
+    /*
+    private void Awake()
+    {
+        if (player != null && player != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+            player = this;
+    }
+
+    private void Start()
+    {
+        GameObject.DontDestroyOnLoad(player);
+    }*/
 
 
-  
+
+
 }

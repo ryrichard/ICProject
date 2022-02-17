@@ -33,6 +33,7 @@ public class Quest_Giver : MonoBehaviour
         //give quest to player
         player.quest = quest;
         questTracker.SetActive(true);
+
         
     }
 

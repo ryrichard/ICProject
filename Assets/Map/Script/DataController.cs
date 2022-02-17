@@ -24,6 +24,16 @@ public class DataController : MonoBehaviour
         get;
     }
 
+    /*
+    [SerializeField]public static GameObject Location
+    {
+        private set;
+        get;
+    }*/
+
+
+
+
     public static string sceneName
     {
         get { return SceneManager.GetActiveScene().name; }
@@ -47,11 +57,14 @@ public class DataController : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        //Location = GameObject.FindGameObjectWithTag("Location");
         pr = player.GetComponentInChildren<PhysicsRaycaster>();
         TeleportPlayer(SceneManager.GetActiveScene().name);
 
         pr.enabled = false; //there seems to be some problen with the XR Cardboard Reticle when using it too soon. So the quick fix is to disable the raycaster for a bit
         Invoke("EnablePhysicsRaycast", 2.0f);
+        //Location.SetActive(true);
+       
     }
 
     static public void GetPlayerLastPosAndScene() //get players position old scene before going to new scene
@@ -77,4 +90,6 @@ public class DataController : MonoBehaviour
     {
         pr.enabled = true;
     }
+
+    
 }
