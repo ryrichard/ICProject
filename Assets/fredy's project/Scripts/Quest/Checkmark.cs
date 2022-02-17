@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Checkmark : MonoBehaviour
 {
 
-
     public Button buttonComponent;
     public RawImage icon;
 
@@ -27,8 +26,8 @@ public class Checkmark : MonoBehaviour
     {
         //finds the button when app starts 
         buttonComponent.onClick.AddListener(ClickHandler);
-    }
 
+    }
 
     public void SetUp (QuestEvent e, GameObject background)
     {

@@ -22,5 +22,20 @@ public class ChangeScene : MonoBehaviour
     {
         DataController.GetPlayerLastPosAndScene();
         SceneManager.LoadScene(SceneName);
+       
     }
+
+    private void OnEnable()
+    {
+        Debug.Log("OnEnable called");
+        SceneManager.sceneLoaded += OnsceneLoaded;
+    }
+
+    void OnsceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        
+    }
+
+    
 }

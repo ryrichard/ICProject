@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //This class checks whether the player has arrived to a location
 public class QuestLocation : MonoBehaviour
@@ -12,7 +13,7 @@ public class QuestLocation : MonoBehaviour
     }
 
     public QuestEvent qEvent;
-    public Quest_Manger qManager;
+    private Quest_Manger qManager;
     public Checkmark cButton;
     public Player player;
 
@@ -26,12 +27,26 @@ public class QuestLocation : MonoBehaviour
             ql = this;
     }
 
+    private void Start()
+    {
+        GameObject.DontDestroyOnLoad(ql);
+        qManager = FindObjectOfType<Quest_Manger>();
+    }
+    
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Village"))
+        {
+            //qManager = FindObjectOfType<Quest_Manger>();
+            player = FindObjectOfType<Player>();
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
        
         //if this object collides with anything else that is not the player, dont do anything
         if (collision.gameObject.tag != "Player") return;
-
 
         //check to see if its the current event
         if (qEvent.status != QuestEvent.EventStatus.current) return;
@@ -47,6 +62,7 @@ public class QuestLocation : MonoBehaviour
 
         
     }
+
     //set up when creating locations
     public void SetUp(Quest_Manger qm, QuestEvent qe, Checkmark ck)
     {
@@ -57,4 +73,10 @@ public class QuestLocation : MonoBehaviour
         qe.button = cButton;
         
     }
+
+    void OnDestroy()
+    {
+        Debug.Log("Location was destroyed");
+    }
+    
 }
