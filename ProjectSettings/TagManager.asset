@@ -11,6 +11,9 @@ TagManager:
   - NPC
   - Location
   - QuestManager
+  - Village
+  - Wizard
+  - Armor
   layers:
   - Default
   - TransparentFX

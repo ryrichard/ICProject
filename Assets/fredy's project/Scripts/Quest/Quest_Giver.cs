@@ -26,6 +26,8 @@ public class Quest_Giver : MonoBehaviour
 
     }
 
+    
+
     public void AcceptQuest()
     {
         questWindow.SetActive(false);
