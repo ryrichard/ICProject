@@ -39,9 +39,14 @@ public class Quest_Manger : MonoBehaviour
     public GameObject background;
     public GameObject checkmarkbox;
 
+
+    //private Vector3 lastPositionA;
+
     //Event location objects
     public GameObject A;
     public GameObject B;
+    public GameObject C;
+    //public GameObject D;
 
    
 
@@ -50,26 +55,28 @@ public class Quest_Manger : MonoBehaviour
     {
         if (qm != null && qm != this)
         {
+
             Destroy(gameObject);
         }
-        else
-            qm = this;
+        else { qm = this; }
 
-        
+       
     }
 
     void Start()
     {
+
+
         //singleton//
         GameObject.DontDestroyOnLoad(qm); //doesn't destroy quest manager when changing scenes
 
 
         //find location
-        
-
-        
+        A = GameObject.FindGameObjectWithTag("Village");
+        B = GameObject.FindGameObjectWithTag("Wizard");
+        C = GameObject.FindGameObjectWithTag("Armor");
         //create each event
-        QuestEvent a = quest.AddQuestEvent("Step 1-", "Description 1", A);
+        QuestEvent a = quest.AddQuestEvent("Step 1-", "Description 1",A);
         QuestEvent b = quest.AddQuestEvent("Step 2-", "Description 2");
         QuestEvent c = quest.AddQuestEvent("Step 3-", "Description 3");
         QuestEvent d = quest.AddQuestEvent("Step 4-", "Description 4");
@@ -90,47 +97,26 @@ public class Quest_Manger : MonoBehaviour
         Checkmark checkMarkBox = createBox(a).GetComponent<Checkmark>();
         A.GetComponent<QuestLocation>().SetUp(this, a, checkMarkBox);
 
-        createBox(b).GetComponent<Checkmark>(); 
+        checkMarkBox = createBox(b).GetComponent<Checkmark>(); 
         B.GetComponent<QuestDialog>().SetUp(this, b, checkMarkBox);
+        
+        checkMarkBox = createBox(c).GetComponent<Checkmark>();
+        C.GetComponent<QuestItem>().SetUp(this, c, checkMarkBox);
 
-        /*checkMarkBox = createBox(c).GetComponent<Checkmark>();
-        checkMarkBox = createBox(d).GetComponent<Checkmark>();
+        /*checkMarkBox = createBox(d).GetComponent<Checkmark>();
+
+        D.GetComponent<QuestLocation>().SetUp(this, a, checkMarkBox);
         checkMarkBox = createBox(e).GetComponent<Checkmark>();
         */
         Debug.Log(a.status);//check status of first button
+        //Debug.Log(b.status);
+
 
         quest.PrintPath();
 
         
     }
 
-    private void Update()
-    {
-        /*
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Village"))
-        {
-            
-            QuestEvent a = quest.AddQuestEvent("Step 1-", "Description 1", A);
-            QuestEvent b = quest.AddQuestEvent("Step 2-", "Description 2");
-            QuestEvent c = quest.AddQuestEvent("Step 3-", "Description 3");
-            QuestEvent d = quest.AddQuestEvent("Step 4-", "Description 4");
-            QuestEvent e = quest.AddQuestEvent("Step 5-", "Description 5");
-
-            quest.AddPath(a.GetId(), b.GetId());
-            quest.AddPath(c.GetId(), d.GetId());
-            quest.AddPath(d.GetId(), e.GetId());
-
-            quest.BFS(a.GetId());
-
-            Checkmark checkMarkBox = createBox(a).GetComponent<Checkmark>();
-            A.GetComponent<QuestLocation>().SetUp(this, a, checkMarkBox);
-            createBox(b).GetComponent<Checkmark>();
-            checkMarkBox = createBox(c).GetComponent<Checkmark>();
-            checkMarkBox = createBox(d).GetComponent<Checkmark>();
-            checkMarkBox = createBox(e).GetComponent<Checkmark>();
-        }*/
-        
-    }
 
     void OnDestroy()
     {
@@ -159,6 +145,7 @@ public class Quest_Manger : MonoBehaviour
             {
                 //make the next in line event available for completion
                 n.UpdateQuestEvent(QuestEvent.EventStatus.current);
+                Debug.Log(e.status);
             }
         }
     }

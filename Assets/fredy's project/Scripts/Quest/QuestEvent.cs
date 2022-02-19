@@ -49,7 +49,8 @@ public class QuestEvent {
         location = loc;
     }
 
-   
+
+
 
     public void UpdateQuestEvent(EventStatus stat)
     {

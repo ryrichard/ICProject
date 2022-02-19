@@ -9,7 +9,9 @@ public class QuestDialog : MonoBehaviour
     public Checkmark cButton;
 
 
-    public DialogBox dbox;
+    private DialogBox dbox;
+
+    
 
     public static QuestDialog qd
     {
@@ -19,12 +21,21 @@ public class QuestDialog : MonoBehaviour
 
     private void Awake()
     {
+        qManager = FindObjectOfType<Quest_Manger>();
+        cButton = FindObjectOfType<Checkmark>();
+        //dbox = FindObjectOfType<DialogBox>();
+        
         if (qd != null && qd != this)
         {
+            qd.gameObject.transform.position = this.gameObject.transform.position;
             Destroy(gameObject);
         }
         else
+        {
             qd = this;
+            DontDestroyOnLoad(gameObject);
+        }
+           
     }
 
     private void Start()
@@ -33,7 +44,12 @@ public class QuestDialog : MonoBehaviour
 
     }
 
-    
+    private void Update()
+    {
+        //Debug.Log(qEvent.status);
+    }
+
+
     public void SetUp(Quest_Manger qm, QuestEvent qe, Checkmark ck)
     {
         qManager = qm;
@@ -46,15 +62,17 @@ public class QuestDialog : MonoBehaviour
 
     void OnDestroy()
     {
-        Debug.Log("Location was destroyed");
+        Debug.Log("QuestDialog was destroyed");
     }
 
     //completes the step when called
-    private void DialogEnd()
+    public void DialogEndUpdate()
     {
+        Debug.Log("Dialog");
         if (qEvent.status != QuestEvent.EventStatus.current) return;
-        else if(dbox.dialogBox == false)
+        else
         {
+            Debug.Log("Dialog Function called");
             //to update these variables in the event manager
             qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             cButton.UpdateImage(QuestEvent.EventStatus.done);

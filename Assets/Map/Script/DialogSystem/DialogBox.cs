@@ -21,13 +21,21 @@ public class DialogBox : MonoBehaviour
     float timeForDialogBox = 1.5f;
     float dialogOffSet = 1f;
 
-    
+    public QuestDialog qd
+    {
+        get;
+        private set;
+    }
+
     BoxCollider bc;
+
 
     
     private void Awake()
     {
         bc = gameObject.GetComponent<BoxCollider>();
+        qd = FindObjectOfType<QuestDialog>();
+        
     }
 
     public void CreateDialogBox()
@@ -38,12 +46,23 @@ public class DialogBox : MonoBehaviour
         dialogBox = Instantiate(prefabDialogBox, pos, Quaternion.identity);
         dialogBox.transform.SetParent(gameObject.transform, true);
         dialogBox.GetComponent<CreateDialogBox>().inkJSONAsset = inkJSONAsset;
-        
     }
     
     public void EndOfDialog()
     {
         Debug.Log("End of dialog");
         bc.enabled = true;
+
+        qd.DialogEndUpdate();
     }
+
+
+    /*
+    private void updateButtton()
+    {
+        if (!isActive)
+        {
+            
+        }
+    }*/
 }

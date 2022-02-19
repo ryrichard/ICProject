@@ -24,6 +24,8 @@ public class DataController : MonoBehaviour
         get;
     }
 
+    public Quest_Manger qm;
+
     /*
     [SerializeField]public static GameObject Location
     {
@@ -31,8 +33,7 @@ public class DataController : MonoBehaviour
         get;
     }*/
 
-
-
+    public string testSample = null;
 
     public static string sceneName
     {
@@ -44,15 +45,20 @@ public class DataController : MonoBehaviour
     [SerializeField] PhysicsRaycaster pr;
 
     //singleton - makes sure this data is the only one to exist in any scene
-    private void Awake()
+    /*private void Awake()
     {
         if (dc != null && dc != this)
+        {
+            dc.testSample = this.testSample;
             Destroy(gameObject);
+        }
         else
         {
             dc = this;
+            
+            DontDestroyOnLoad(gameObject);
         }
-    }
+    }*/
 
     void Start()
     {

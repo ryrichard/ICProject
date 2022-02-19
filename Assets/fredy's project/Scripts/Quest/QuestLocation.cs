@@ -16,21 +16,35 @@ public class QuestLocation : MonoBehaviour
     private Quest_Manger qManager;
     public Checkmark cButton;
     public Player player;
+   
+    public string data = null;
 
     private void Awake()
     {
+       
+       
         if (ql != null && ql != this)
         {
+            //keeps the location of the object from the scence that we're changing too
+            ql.gameObject.transform.position = this.gameObject.transform.position;
+            ql.data = this.data;
+
             Destroy(gameObject);
         }
         else
+        {
             ql = this;
+            DontDestroyOnLoad(gameObject);
+        }
+            
     }
 
     private void Start()
     {
         GameObject.DontDestroyOnLoad(ql);
         qManager = FindObjectOfType<Quest_Manger>();
+        
+
     }
     
     private void Update()
@@ -76,7 +90,7 @@ public class QuestLocation : MonoBehaviour
 
     void OnDestroy()
     {
-        Debug.Log("Location was destroyed");
+        Debug.Log("QuestLocation was destroyed");
     }
     
 }
