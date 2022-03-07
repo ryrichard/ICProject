@@ -21,11 +21,8 @@ public class DialogBox : MonoBehaviour
     float timeForDialogBox = 1.5f;
     float dialogOffSet = 1f;
 
-    public QuestDialog qd
-    {
-        get;
-        private set;
-    }
+    private QuestDialog qd;
+    private QuestDialogKnight qdk;
 
     BoxCollider bc;
 
@@ -54,15 +51,18 @@ public class DialogBox : MonoBehaviour
         bc.enabled = true;
 
         qd.DialogEndUpdate();
+        
+    }
+
+    
+    public void EndOfDialogK()
+    {
+        Debug.Log("End of dialog");
+        bc.enabled = true;
+
+        qdk.DialogEndUpdateKnight();
     }
 
 
-    /*
-    private void updateButtton()
-    {
-        if (!isActive)
-        {
-            
-        }
-    }*/
+   
 }

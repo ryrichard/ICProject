@@ -46,9 +46,11 @@ public class Quest_Manger : MonoBehaviour
     public GameObject A;
     public GameObject B;
     public GameObject C;
-    //public GameObject D;
+    public GameObject D;
+    public GameObject E;/*
+    public GameObject F;
+    public GameObject G;*/
 
-   
 
     //singleton setup
     private void Awake()
@@ -75,19 +77,28 @@ public class Quest_Manger : MonoBehaviour
         A = GameObject.FindGameObjectWithTag("Village");
         B = GameObject.FindGameObjectWithTag("Wizard");
         C = GameObject.FindGameObjectWithTag("Armor");
-        //create each event
-        QuestEvent a = quest.AddQuestEvent("Step 1-", "Description 1",A);
-        QuestEvent b = quest.AddQuestEvent("Step 2-", "Description 2");
-        QuestEvent c = quest.AddQuestEvent("Step 3-", "Description 3");
-        QuestEvent d = quest.AddQuestEvent("Step 4-", "Description 4");
-        QuestEvent e = quest.AddQuestEvent("Step 5-", "Description 5");
+        D = GameObject.FindGameObjectWithTag("Guard");
+        E = GameObject.FindGameObjectWithTag("Letter");/*
+        F = GameObject.FindGameObjectWithTag("Resources");
+        G = GameObject.FindGameObjectWithTag("Castle");*/
 
+        //create each event
+        QuestEvent a = quest.AddQuestEvent("Initial Access", "A small village, seek conversation.",A);
+        QuestEvent b = quest.AddQuestEvent("Initial Access", "Speak with wizard.");
+        QuestEvent c = quest.AddQuestEvent("Privilage Escalation", "Disguise as authority, find armor.");
+        QuestEvent d = quest.AddQuestEvent("Privilage Escalation", "Speak with Guards");
+        QuestEvent e = quest.AddQuestEvent("Lateral Movement", "Intercep the delivery, send a letter to cancel delivery.");/*
+        QuestEvent f = quest.AddQuestEvent("Comand and Control", "Gather Resources, build your trojan horse");
+        QuestEvent g = quest.AddQuestEvent("Impact", "Enter the castle unnoticed");
+        */
         //define the paths between the events - e.g. the order they must be completed
         //from --> to
         quest.AddPath(a.GetId(), b.GetId());
         quest.AddPath(b.GetId(), c.GetId());
         quest.AddPath(c.GetId(), d.GetId());
-        quest.AddPath(d.GetId(), e.GetId());
+        quest.AddPath(d.GetId(), e.GetId());/*
+        quest.AddPath(e.GetId(), f.GetId());
+        quest.AddPath(f.GetId(), g.GetId());*/
 
         quest.BFS(a.GetId());
 
@@ -102,12 +113,20 @@ public class Quest_Manger : MonoBehaviour
         
         checkMarkBox = createBox(c).GetComponent<Checkmark>();
         C.GetComponent<QuestItem>().SetUp(this, c, checkMarkBox);
+        
+        checkMarkBox = createBox(d).GetComponent<Checkmark>();
+        D.GetComponent<QuestDialogKnight>().SetUp(this, d, checkMarkBox);
 
-        /*checkMarkBox = createBox(d).GetComponent<Checkmark>();
-
-        D.GetComponent<QuestLocation>().SetUp(this, a, checkMarkBox);
         checkMarkBox = createBox(e).GetComponent<Checkmark>();
+        E.GetComponent<QuestItemLetter>().SetUp(this, e, checkMarkBox);/*
+
+        checkMarkBox = createBox(f).GetComponent<Checkmark>();
+        F.GetComponent<QuestLocation>().SetUp(this, f, checkMarkBox);
+
+        checkMarkBox = createBox(g).GetComponent<Checkmark>();
+        G.GetComponent<QuestLocation>().SetUp(this, g, checkMarkBox);
         */
+      
         Debug.Log(a.status);//check status of first button
         //Debug.Log(b.status);
 

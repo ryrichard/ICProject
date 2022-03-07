@@ -9,10 +9,6 @@ public class QuestDialog : MonoBehaviour
     public Checkmark cButton;
 
 
-    private DialogBox dbox;
-
-    
-
     public static QuestDialog qd
     {
         private set;
@@ -21,9 +17,9 @@ public class QuestDialog : MonoBehaviour
 
     private void Awake()
     {
+        //finds required objects
         qManager = FindObjectOfType<Quest_Manger>();
         cButton = FindObjectOfType<Checkmark>();
-        //dbox = FindObjectOfType<DialogBox>();
         
         if (qd != null && qd != this)
         {
