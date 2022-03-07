@@ -2,16 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestItem : MonoBehaviour
+public class QuestDialogKnight : MonoBehaviour
 {
     public QuestEvent qEvent;
     public Quest_Manger qManager;
     public Checkmark cButton;
-    public GameObject armor;
 
 
-
-    public static QuestItem qi
+    public static QuestDialogKnight qdk
     {
         private set;
         get;
@@ -19,20 +17,33 @@ public class QuestItem : MonoBehaviour
 
     private void Awake()
     {
+        //finds required objects
         qManager = FindObjectOfType<Quest_Manger>();
         cButton = FindObjectOfType<Checkmark>();
-        armor = GameObject.FindGameObjectWithTag("Armor");
-        if (qi != null && qi != this)
+
+        if (qdk != null && qdk != this)
         {
-            qi.gameObject.transform.position = this.gameObject.transform.position;
+            //this gameObject takes the position of the same type of gameObject that was in the scene
+            qdk.gameObject.transform.position = this.gameObject.transform.position;
             Destroy(gameObject);
         }
         else
         {
-            qi = this;
+            qdk = this;
             DontDestroyOnLoad(gameObject);
         }
 
+    }
+
+    private void Start()
+    {
+        GameObject.DontDestroyOnLoad(qdk);
+
+    }
+
+    private void Update()
+    {
+        //Debug.Log(qEvent.status);
     }
 
 
@@ -46,38 +57,23 @@ public class QuestItem : MonoBehaviour
 
     }
 
-
-    private void Start()
-    {
-        GameObject.DontDestroyOnLoad(qi);
-
-    }
-
-    private void Update()
-    {
-        //Debug.Log(qi.qEvent.status);
-    }
-
     void OnDestroy()
     {
         Debug.Log("QuestDialog was destroyed");
     }
 
-
-    public void ItemPickUp()
+    //completes the step when called
+    public void DialogEndUpdateKnight()
     {
-        Debug.Log("ArmorPickUp called");
+        Debug.Log("Dialog");
         if (qEvent.status != QuestEvent.EventStatus.current) return;
         else
         {
-            Destroy(armor);
+            Debug.Log("Dialog Function called");
             //to update these variables in the event manager
             qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             cButton.UpdateImage(QuestEvent.EventStatus.done);
             qManager.UpdateQuestOnCompletion(qEvent);
         }
-        
     }
-
-    
 }

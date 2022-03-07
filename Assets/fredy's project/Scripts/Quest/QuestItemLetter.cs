@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestItem : MonoBehaviour
+public class QuestItemLetter : MonoBehaviour
 {
+
     public QuestEvent qEvent;
     public Quest_Manger qManager;
     public Checkmark cButton;
-    public GameObject armor;
+    public GameObject letter;
 
+    public Transform obj;
 
-
-    public static QuestItem qi
+    public static QuestItemLetter qil
     {
         private set;
         get;
@@ -21,15 +22,15 @@ public class QuestItem : MonoBehaviour
     {
         qManager = FindObjectOfType<Quest_Manger>();
         cButton = FindObjectOfType<Checkmark>();
-        armor = GameObject.FindGameObjectWithTag("Armor");
-        if (qi != null && qi != this)
+        letter = GameObject.FindGameObjectWithTag("Letter");
+        if (qil != null && qil != this)
         {
-            qi.gameObject.transform.position = this.gameObject.transform.position;
+            qil.gameObject.transform.position = this.gameObject.transform.position;
             Destroy(gameObject);
         }
         else
         {
-            qi = this;
+            qil = this;
             DontDestroyOnLoad(gameObject);
         }
 
@@ -49,7 +50,7 @@ public class QuestItem : MonoBehaviour
 
     private void Start()
     {
-        GameObject.DontDestroyOnLoad(qi);
+        GameObject.DontDestroyOnLoad(qil);
 
     }
 
@@ -64,20 +65,41 @@ public class QuestItem : MonoBehaviour
     }
 
 
-    public void ItemPickUp()
+    public void ItemPickUpUpdate()
     {
-        Debug.Log("ArmorPickUp called");
+        Debug.Log("ItemPickUp called");
+
         if (qEvent.status != QuestEvent.EventStatus.current) return;
         else
         {
-            Destroy(armor);
+            Destroy(letter);
             //to update these variables in the event manager
             qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             cButton.UpdateImage(QuestEvent.EventStatus.done);
             qManager.UpdateQuestOnCompletion(qEvent);
         }
-        
+        /*
+        Destroy(armor);
+        //to update these variables in the event manager
+        qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
+        cButton.UpdateImage(QuestEvent.EventStatus.done);
+        qManager.UpdateQuestOnCompletion(qEvent);*/
     }
 
-    
+    public void pickUpObject()
+    {
+        GetComponent<Rigidbody>().useGravity = false;
+        //GetComponent<Rigidbody>().freezeRotation = true;
+        //GetComponent<Rigidbody>().isKinematic = true;
+        this.transform.position = obj.transform.position;
+        //this.transform.parent = GameObject.Find("Letter").transform;
+    }
+
+    public void dropObject()
+    {
+        this.transform.parent = null;
+        GetComponent<Rigidbody>().useGravity = true;
+        ItemPickUpUpdate();
+    }
+
 }

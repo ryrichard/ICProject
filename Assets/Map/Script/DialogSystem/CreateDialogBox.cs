@@ -24,6 +24,7 @@ public class CreateDialogBox : MonoBehaviour
 
 	public event Action<Story> OnCreateStory;
 
+	private QuestEvent qe;
 	
 
 	void Awake()
@@ -74,8 +75,8 @@ public class CreateDialogBox : MonoBehaviour
 				});
 			}
 		}
-        // If we've read all the content and there's no choices, the story is finished!
-        else
+		// If we've read all the content and there's no choices, the story is finished!
+		else
         {
 			//Button choice = CreateChoiceView("End of story.\nRestart?");
 			//choice.onClick.AddListener(delegate
@@ -86,7 +87,8 @@ public class CreateDialogBox : MonoBehaviour
 			GetComponentInParent<DialogBox>().EndOfDialog();
 			RemoveChildren();
 			Destroy(gameObject);
-        }
+			//GetComponentInParent<DialogBox>().EndOfDialogK();
+		}
     }
 
 	// When we click the choice button, tell the story to choose that choice!

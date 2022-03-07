@@ -4270,7 +4270,7 @@ GameObject:
   - component: {fileID: 635431947}
   m_Layer: 0
   m_Name: SF_Character_Wizard
-  m_TagString: Untagged
+  m_TagString: Wizard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6372,7 +6372,7 @@ Transform:
   m_LocalScale: {x: 10, y: 9, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &919491231
 MonoBehaviour:
@@ -11923,7 +11923,7 @@ Transform:
   - {fileID: 1076717340}
   - {fileID: 1983131529}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1906453296
 PrefabInstance:
