@@ -7,11 +7,13 @@ public class QuestDialog : MonoBehaviour
     public QuestEvent qEvent;
     public Quest_Manger qManager;
     public Checkmark cButton;
-
+    public GameObject qdname;
+   
 
     public static QuestDialog qd
     {
         private set;
+       
         get;
     }
 
@@ -20,7 +22,6 @@ public class QuestDialog : MonoBehaviour
         //finds required objects
         qManager = FindObjectOfType<Quest_Manger>();
         cButton = FindObjectOfType<Checkmark>();
-        
         if (qd != null && qd != this)
         {
             qd.gameObject.transform.position = this.gameObject.transform.position;
@@ -31,18 +32,21 @@ public class QuestDialog : MonoBehaviour
             qd = this;
             DontDestroyOnLoad(gameObject);
         }
-           
+
+
     }
 
     private void Start()
     {
         GameObject.DontDestroyOnLoad(qd);
+        
 
     }
 
     private void Update()
     {
         //Debug.Log(qEvent.status);
+       //string wiz = "Wizard";
     }
 
 
@@ -56,6 +60,7 @@ public class QuestDialog : MonoBehaviour
 
     }
 
+
     void OnDestroy()
     {
         Debug.Log("QuestDialog was destroyed");
@@ -64,11 +69,11 @@ public class QuestDialog : MonoBehaviour
     //completes the step when called
     public void DialogEndUpdate()
     {
-        Debug.Log("Dialog");
+        //Debug.Log("DialogEndUpdate");
         if (qEvent.status != QuestEvent.EventStatus.current) return;
         else
         {
-            Debug.Log("Dialog Function called");
+            Debug.Log("AT Dialog Function Updating button");
             //to update these variables in the event manager
             qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             cButton.UpdateImage(QuestEvent.EventStatus.done);

@@ -8,9 +8,9 @@ public class QuestItemLetter : MonoBehaviour
     public QuestEvent qEvent;
     public Quest_Manger qManager;
     public Checkmark cButton;
-    public GameObject letter;
 
-    public Transform obj;
+    public GameObject letter;
+    public GameObject obj;
 
     public static QuestItemLetter qil
     {
@@ -23,6 +23,7 @@ public class QuestItemLetter : MonoBehaviour
         qManager = FindObjectOfType<Quest_Manger>();
         cButton = FindObjectOfType<Checkmark>();
         letter = GameObject.FindGameObjectWithTag("Letter");
+        
         if (qil != null && qil != this)
         {
             qil.gameObject.transform.position = this.gameObject.transform.position;
@@ -51,12 +52,13 @@ public class QuestItemLetter : MonoBehaviour
     private void Start()
     {
         GameObject.DontDestroyOnLoad(qil);
-
+        
     }
 
     private void Update()
     {
-        //Debug.Log(qi.qEvent.status);
+        //Debug.Log(qil.qEvent.status);
+        obj = GameObject.FindGameObjectWithTag("Obj");
     }
 
     void OnDestroy()
@@ -67,39 +69,31 @@ public class QuestItemLetter : MonoBehaviour
 
     public void ItemPickUpUpdate()
     {
-        Debug.Log("ItemPickUp called");
-
+        Debug.Log("ItemPickUpLetterUpdate called");
         if (qEvent.status != QuestEvent.EventStatus.current) return;
         else
         {
+            Debug.Log("INSIDE ItemPickUpLetterUpdate");
+            this.transform.parent = null;
             Destroy(letter);
             //to update these variables in the event manager
             qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             cButton.UpdateImage(QuestEvent.EventStatus.done);
             qManager.UpdateQuestOnCompletion(qEvent);
         }
-        /*
-        Destroy(armor);
-        //to update these variables in the event manager
-        qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
-        cButton.UpdateImage(QuestEvent.EventStatus.done);
-        qManager.UpdateQuestOnCompletion(qEvent);*/
+       
     }
 
     public void pickUpObject()
     {
-        GetComponent<Rigidbody>().useGravity = false;
-        //GetComponent<Rigidbody>().freezeRotation = true;
-        //GetComponent<Rigidbody>().isKinematic = true;
+        obj.GetComponent<Rigidbody>().useGravity = false;
+        obj.GetComponent<Rigidbody>().freezeRotation = true;
+        obj.GetComponent<Rigidbody>().isKinematic = true; //makes the rigidbody not be acted upon by forces
         this.transform.position = obj.transform.position;
-        //this.transform.parent = GameObject.Find("Letter").transform;
-    }
-
-    public void dropObject()
-    {
-        this.transform.parent = null;
-        GetComponent<Rigidbody>().useGravity = true;
-        ItemPickUpUpdate();
+        this.transform.rotation = obj.transform.rotation;
+        this.transform.parent = obj.transform;
+        this.GetComponent<Rigidbody>().useGravity = false;
+        
     }
 
 }

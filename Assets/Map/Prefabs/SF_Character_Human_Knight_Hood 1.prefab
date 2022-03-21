@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 6466860446841712351}
   - component: {fileID: 6466860446841712350}
   - component: {fileID: 6466860446841712321}
-  - component: {fileID: 6466860446841712348}
+  - component: {fileID: 4249769146541172438}
   m_Layer: 0
   m_Name: SF_Character_Human_Knight_Hood 1
   m_TagString: Guard
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkJSONAsset: {fileID: 4900000, guid: d8b2dd9bcd3934d18b69c46f4ccc995d, type: 3}
   prefabDialogBox: {fileID: 2894949041579776041, guid: 9185f1579078d4c21a21cbd102a96dc7, type: 3}
---- !u!114 &6466860446841712348
+--- !u!114 &4249769146541172438
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -430,7 +430,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6466860446841712320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fe959d4e49904f818606ee4b94f5706, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fe375da4161d4cac88ccea45b3d8ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   qManager: {fileID: 0}

@@ -16,6 +16,7 @@ TagManager:
   - Armor
   - Guard
   - Letter
+  - Obj
   layers:
   - Default
   - TransparentFX
