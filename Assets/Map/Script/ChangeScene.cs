@@ -8,6 +8,8 @@ public class ChangeScene : MonoBehaviour
     [SerializeField] string SceneName;
     public string EnterMessage;
 
+    private QuestEvent qe;
+
     public void OnPointerEnter()
     {
         Debug.Log(EnterMessage);
@@ -34,6 +36,7 @@ public class ChangeScene : MonoBehaviour
     void OnsceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("OnSceneLoaded: " + scene.name);
+        
         
     }
 

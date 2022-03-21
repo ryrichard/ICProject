@@ -23,16 +23,18 @@ public class DialogBox : MonoBehaviour
 
     private QuestDialog qd;
     private QuestDialogKnight qdk;
+    private GameObject wiz, kni;
 
     BoxCollider bc;
-
-
     
+
     private void Awake()
     {
         bc = gameObject.GetComponent<BoxCollider>();
+        qdk = FindObjectOfType<QuestDialogKnight>();
         qd = FindObjectOfType<QuestDialog>();
-        
+        wiz = GameObject.FindGameObjectWithTag("Wizard");
+        kni = GameObject.FindGameObjectWithTag("Guard");
     }
 
     public void CreateDialogBox()
@@ -47,22 +49,20 @@ public class DialogBox : MonoBehaviour
     
     public void EndOfDialog()
     {
-        Debug.Log("End of dialog");
         bc.enabled = true;
 
-        qd.DialogEndUpdate();
-        
-    }
 
+        if (this.gameObject == kni)
+        {
+            qdk.DialogEndUpdateK();
+
+        }else if (this.gameObject == wiz)
+        {
+            qd.DialogEndUpdate();
+        }
+            
+    }
     
-    public void EndOfDialogK()
-    {
-        Debug.Log("End of dialog");
-        bc.enabled = true;
-
-        qdk.DialogEndUpdateKnight();
-    }
-
-
+   
    
 }

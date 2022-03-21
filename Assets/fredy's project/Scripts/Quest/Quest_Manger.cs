@@ -13,27 +13,7 @@ public class Quest_Manger : MonoBehaviour
         get;
     }
 
-    
-
-    public GoalType goalType;
-    public int required_ammount;
-    public int current_ammount;
-
     public ChangeScene cs;
-
-    public bool isReached()
-    {
-        return (current_ammount >= required_ammount);
-    }
-
-    public void ItemGathered()
-    {
-        if(goalType == GoalType.gather)
-        current_ammount++;
-
-    }
-
-    
 
     public Quest quest = new Quest();
     public GameObject background;
@@ -87,7 +67,7 @@ public class Quest_Manger : MonoBehaviour
         QuestEvent b = quest.AddQuestEvent("Initial Access", "Speak with wizard.");
         QuestEvent c = quest.AddQuestEvent("Privilage Escalation", "Disguise as authority, find armor.");
         QuestEvent d = quest.AddQuestEvent("Privilage Escalation", "Speak with Guards");
-        QuestEvent e = quest.AddQuestEvent("Lateral Movement", "Intercep the delivery, send a letter to cancel delivery.");/*
+        QuestEvent e = quest.AddQuestEvent("Lateral Movement", "Intercept the delivery, send a letter to cancel delivery.");/*
         QuestEvent f = quest.AddQuestEvent("Comand and Control", "Gather Resources, build your trojan horse");
         QuestEvent g = quest.AddQuestEvent("Impact", "Enter the castle unnoticed");
         */
@@ -127,7 +107,7 @@ public class Quest_Manger : MonoBehaviour
         G.GetComponent<QuestLocation>().SetUp(this, g, checkMarkBox);
         */
       
-        Debug.Log(a.status);//check status of first button
+        Debug.Log(b.status);//check status of first button
         //Debug.Log(b.status);
 
 
@@ -174,12 +154,4 @@ public class Quest_Manger : MonoBehaviour
     
 
 
-}
-
-public enum GoalType
-{
-    kill,
-    gather,
-    walkTo,
-    TalkTo,
 }

@@ -24,7 +24,6 @@ public class CreateDialogBox : MonoBehaviour
 
 	public event Action<Story> OnCreateStory;
 
-	private QuestEvent qe;
 	
 
 	void Awake()
@@ -84,10 +83,10 @@ public class CreateDialogBox : MonoBehaviour
 			//    StartStory();
 			//});
 			
-			GetComponentInParent<DialogBox>().EndOfDialog();
+			
 			RemoveChildren();
 			Destroy(gameObject);
-			//GetComponentInParent<DialogBox>().EndOfDialogK();
+			GetComponentInParent<DialogBox>().EndOfDialog();
 		}
     }
 

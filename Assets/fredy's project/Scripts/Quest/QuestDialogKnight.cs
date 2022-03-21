@@ -7,7 +7,7 @@ public class QuestDialogKnight : MonoBehaviour
     public QuestEvent qEvent;
     public Quest_Manger qManager;
     public Checkmark cButton;
-
+    public GameObject qdkname;
 
     public static QuestDialogKnight qdk
     {
@@ -20,10 +20,9 @@ public class QuestDialogKnight : MonoBehaviour
         //finds required objects
         qManager = FindObjectOfType<Quest_Manger>();
         cButton = FindObjectOfType<Checkmark>();
-
+        qdkname = GetComponent<GameObject>();
         if (qdk != null && qdk != this)
         {
-            //this gameObject takes the position of the same type of gameObject that was in the scene
             qdk.gameObject.transform.position = this.gameObject.transform.position;
             Destroy(gameObject);
         }
@@ -32,6 +31,7 @@ public class QuestDialogKnight : MonoBehaviour
             qdk = this;
             DontDestroyOnLoad(gameObject);
         }
+
 
     }
 
@@ -57,19 +57,19 @@ public class QuestDialogKnight : MonoBehaviour
 
     }
 
+
     void OnDestroy()
     {
         Debug.Log("QuestDialog was destroyed");
     }
 
     //completes the step when called
-    public void DialogEndUpdateKnight()
+    public void DialogEndUpdateK()
     {
-        Debug.Log("Dialog");
         if (qEvent.status != QuestEvent.EventStatus.current) return;
         else
         {
-            Debug.Log("Dialog Function called");
+            Debug.Log("Dialog Knight Updating!");
             //to update these variables in the event manager
             qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             cButton.UpdateImage(QuestEvent.EventStatus.done);
