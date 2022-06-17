@@ -63,7 +63,7 @@ public class QuestItemLetter : MonoBehaviour
 
     void OnDestroy()
     {
-        Debug.Log("QuestDialog was destroyed");
+        Debug.Log("QuestItemLetter was destroyed");
     }
 
 

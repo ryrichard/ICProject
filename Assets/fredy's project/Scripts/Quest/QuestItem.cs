@@ -60,7 +60,7 @@ public class QuestItem : MonoBehaviour
 
     void OnDestroy()
     {
-        Debug.Log("QuestDialog was destroyed");
+        Debug.Log("QuestItemArmor was destroyed");
     }
 
 

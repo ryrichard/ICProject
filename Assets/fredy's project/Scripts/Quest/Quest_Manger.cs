@@ -27,9 +27,9 @@ public class Quest_Manger : MonoBehaviour
     public GameObject B;
     public GameObject C;
     public GameObject D;
-    public GameObject E;/*
+    public GameObject E;
     public GameObject F;
-    public GameObject G;*/
+    public GameObject G;
 
 
     //singleton setup
@@ -58,27 +58,27 @@ public class Quest_Manger : MonoBehaviour
         B = GameObject.FindGameObjectWithTag("Wizard");
         C = GameObject.FindGameObjectWithTag("Armor");
         D = GameObject.FindGameObjectWithTag("Guard");
-        E = GameObject.FindGameObjectWithTag("Letter");/*
+        E = GameObject.FindGameObjectWithTag("Letter");
         F = GameObject.FindGameObjectWithTag("Resources");
-        G = GameObject.FindGameObjectWithTag("Castle");*/
+        G = GameObject.FindGameObjectWithTag("Castle");
 
         //create each event
         QuestEvent a = quest.AddQuestEvent("Initial Access", "A small village, seek conversation.",A);
         QuestEvent b = quest.AddQuestEvent("Initial Access", "Speak with wizard.");
         QuestEvent c = quest.AddQuestEvent("Privilage Escalation", "Disguise as authority, find armor.");
         QuestEvent d = quest.AddQuestEvent("Privilage Escalation", "Speak with Guards");
-        QuestEvent e = quest.AddQuestEvent("Lateral Movement", "Intercept the delivery, send a letter to cancel delivery.");/*
+        QuestEvent e = quest.AddQuestEvent("Lateral Movement", "Intercept the delivery, send a letter to cancel delivery.");
         QuestEvent f = quest.AddQuestEvent("Comand and Control", "Gather Resources, build your trojan horse");
         QuestEvent g = quest.AddQuestEvent("Impact", "Enter the castle unnoticed");
-        */
+        
         //define the paths between the events - e.g. the order they must be completed
         //from --> to
         quest.AddPath(a.GetId(), b.GetId());
         quest.AddPath(b.GetId(), c.GetId());
         quest.AddPath(c.GetId(), d.GetId());
-        quest.AddPath(d.GetId(), e.GetId());/*
+        quest.AddPath(d.GetId(), e.GetId());
         quest.AddPath(e.GetId(), f.GetId());
-        quest.AddPath(f.GetId(), g.GetId());*/
+        quest.AddPath(f.GetId(), g.GetId());
 
         quest.BFS(a.GetId());
 
@@ -98,12 +98,12 @@ public class Quest_Manger : MonoBehaviour
         D.GetComponent<QuestDialogKnight>().SetUp(this, d, checkMarkBox);
 
         checkMarkBox = createBox(e).GetComponent<Checkmark>();
-        E.GetComponent<QuestItemLetter>().SetUp(this, e, checkMarkBox);/*
+        E.GetComponent<QuestItemLetter>().SetUp(this, e, checkMarkBox);
 
         checkMarkBox = createBox(f).GetComponent<Checkmark>();
-        F.GetComponent<QuestLocation>().SetUp(this, f, checkMarkBox);
+        F.GetComponent<QuestItemResources>().SetUp(this, f, checkMarkBox);
 
-        checkMarkBox = createBox(g).GetComponent<Checkmark>();
+        checkMarkBox = createBox(g).GetComponent<Checkmark>();/*
         G.GetComponent<QuestLocation>().SetUp(this, g, checkMarkBox);
         */
       

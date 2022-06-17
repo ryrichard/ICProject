@@ -60,7 +60,7 @@ public class QuestDialogKnight : MonoBehaviour
 
     void OnDestroy()
     {
-        Debug.Log("QuestDialog was destroyed");
+        Debug.Log("QuestDialogKnight was destroyed");
     }
 
     //completes the step when called

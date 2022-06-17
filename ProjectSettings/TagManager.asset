@@ -17,6 +17,9 @@ TagManager:
   - Guard
   - Letter
   - Obj
+  - Resources
+  - Castle
+  - Guard2
   layers:
   - Default
   - TransparentFX

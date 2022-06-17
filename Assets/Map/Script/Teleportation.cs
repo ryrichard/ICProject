@@ -65,8 +65,10 @@ public class Teleportation : MonoBehaviour
 
     private void TeleportPlayer()
     {
-        if(!exit)
+        if (!exit)
             teleExitPos.y = DataController.player.transform.position.y;
+       
+            
 
         DataController.player.transform.position = teleExitPos;
         //DataController.player.transform.rotation = Quaternion.Euler(teleExitRot);

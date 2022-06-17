@@ -7,13 +7,23 @@ public class OpenCastleDoor : MonoBehaviour
     [SerializeField] GameObject castleDoor;
     Vector3 castleDoorPos;
 
-    float openDoorY = 4.5f;
+    bool isOpen = false;
+
+    float openDoorY = 5.0f;
+
+    public Teleportation telepad; 
 
     private void Awake()
     {
         castleDoor = this.gameObject;
         castleDoorPos = castleDoor.transform.position;
-        CloseDoor();
+        castleDoor.GetComponent<BoxCollider>().enabled = false;
+        
+        //CloseDoor();
+    }
+    private void Update()
+    {
+        //castleDoor.GetComponent<OpenCastleDoor>().enabled = false;
     }
 
     public void OnPointerLook()
@@ -23,16 +33,36 @@ public class OpenCastleDoor : MonoBehaviour
 
     public void OnPointerClick()
     {
-        OpenDoor();
+        OnPointerLook();
+        if (isOpen == false)
+        {
+            OpenDoor();
+            isOpen = true;
+        }
+        
+        else
+        {
+            CloseDoor();
+            isOpen = false;
+        }
+            
     }
 
     void CloseDoor()
     {
-        castleDoor.transform.position = new Vector3(castleDoorPos.x, castleDoorPos.y - openDoorY, castleDoorPos.z);
+        //moves object in world postion
+        castleDoor.transform.position = new Vector3(castleDoorPos.x, castleDoorPos.y, castleDoorPos.z);
+        //updates local position
+        //castleDoorPos = new Vector3(castleDoorPos.x, castleDoorPos.y, castleDoorPos.z);
+
     }
 
     void OpenDoor()
     {
+        //moves object in world position
         castleDoor.transform.position = new Vector3(castleDoorPos.x, openDoorY, castleDoorPos.z);
+        //updates local potition
+        //castleDoorPos = new Vector3(castleDoorPos.x, openDoorY, castleDoorPos.z);
+
     }
 }

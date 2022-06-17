@@ -40,5 +40,10 @@ public class ChangeScene : MonoBehaviour
         
     }
 
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        MoveToNewScene();
+    }
+
+
 }

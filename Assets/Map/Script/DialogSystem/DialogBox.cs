@@ -8,6 +8,8 @@ using Ink.Runtime;
 
 public class DialogBox : MonoBehaviour
 {
+    public OpenCastleDoor castleDoor;
+
     //dialogbox will handle how the dialog box will appear to users. it will require teh script 
     public GameObject dialogBox
     {
@@ -24,6 +26,7 @@ public class DialogBox : MonoBehaviour
     private QuestDialog qd;
     private QuestDialogKnight qdk;
     private GameObject wiz, kni;
+    //private GameObject kni2;
 
     BoxCollider bc;
     
@@ -35,6 +38,7 @@ public class DialogBox : MonoBehaviour
         qd = FindObjectOfType<QuestDialog>();
         wiz = GameObject.FindGameObjectWithTag("Wizard");
         kni = GameObject.FindGameObjectWithTag("Guard");
+        //kni2 = GameObject.FindGameObjectWithTag("Guard2");
     }
 
     public void CreateDialogBox()
@@ -60,6 +64,11 @@ public class DialogBox : MonoBehaviour
         {
             qd.DialogEndUpdate();
         }
+        /*else if (this.gameObject == kni2)
+        {
+            kni2.DialogEndUpdate();
+            castleDoor.GetComponent<OpenCastleDoor>().enabled = true;
+        }*/
             
     }
     
