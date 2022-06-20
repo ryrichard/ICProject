@@ -1,0 +1,1599 @@
+Unity Editor version:    2020.3.17f1 (a4537701e4ab)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 10.15.7 (Build 19H2)
+Darwin version:          19.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        24576 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/Fredy/GitHub/ICProject
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49826
+Successfully changed project path to: /Users/Fredy/GitHub/ICProject
+/Users/Fredy/GitHub/ICProject
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 100.25 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.17f1 (a4537701e4ab)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/Fredy/GitHub/ICProject/Assets
+GfxDevice: creating device client; threaded=0
+2022-06-19 18:04:54.570 Unity[1069:16440] iMac preferred device: NVIDIA GeForce GTX 675MX (high power)
+2022-06-19 18:04:54.570 Unity[1069:16440] Metal devices available: 1
+2022-06-19 18:04:54.570 Unity[1069:16440] 0: NVIDIA GeForce GTX 675MX (high power)
+2022-06-19 18:04:54.571 Unity[1069:16440] Using device NVIDIA GeForce GTX 675MX (high power)
+Initializing Metal device caps: NVIDIA GeForce GTX 675MX
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56069
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.17f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000966 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 94.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 11.026 seconds
+Domain Reload Profiling:
+	ReloadAssembly (11026ms)
+		BeginReloadAssembly (55ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (689ms)
+			LoadAssemblies (54ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (251ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (312ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (94ms)
+				BeforeProcessingInitializeOnLoad (34ms)
+				ProcessInitializeOnLoadAttributes (137ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002813 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 97.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.894 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1949ms)
+		BeginReloadAssembly (220ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1636ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (482ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (712ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (97ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (476ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 2.381478 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.107049 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Initializing Unity extensions:
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2418 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.9 MB.
+System memory in use after: 219.2 MB.
+
+Unloading 257 unused Assets to reduce memory usage. Loaded Objects now: 2896.
+Total: 4.515782 ms (FindLiveObjects: 0.300657 ms CreateObjectMapping: 0.106547 ms MarkObjects: 3.447305 ms  DeleteObjects: 0.659720 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_bell_1_d.wav
+  artifactKey: Guid(e4598b078fbb0493fb2a32c42257bf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_bell_1_d.wav using Guid(e4598b078fbb0493fb2a32c42257bf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44bce8ae1f1aa682cedab711d0ef7ef0') in 1.887569 seconds 
+  Import took 1.892492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002513 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_6_d.wav
+  artifactKey: Guid(2ac93bcc8bba743b299e0af8601e0cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_6_d.wav using Guid(2ac93bcc8bba743b299e0af8601e0cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8aec231dfbd67c14a3193d645cea03d') in 0.094431 seconds 
+  Import took 0.099136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_2_a.wav
+  artifactKey: Guid(71581a3a876c64355967f61beb29f19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_2_a.wav using Guid(71581a3a876c64355967f61beb29f19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ae4ed2ac419a405cb650bac48d60d5') in 0.079424 seconds 
+  Import took 0.104669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_3_b.wav
+  artifactKey: Guid(0e30f074e023c4ddfaa353b20fd5df44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_3_b.wav using Guid(0e30f074e023c4ddfaa353b20fd5df44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b70619b8c176926c445adc2c591b15d') in 0.082637 seconds 
+  Import took 0.086593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_4_c.wav
+  artifactKey: Guid(a17a3cb9f9373471f8d7bea506264b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_4_c.wav using Guid(a17a3cb9f9373471f8d7bea506264b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '153e91c280f6e2d7fa33d61b63a447b8') in 0.023422 seconds 
+  Import took 0.027625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_1_a.wav
+  artifactKey: Guid(fe636fb748cfb46e0a4acf50bf7750ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_1_a.wav using Guid(fe636fb748cfb46e0a4acf50bf7750ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5e00d7a90f5fb1acbe866e36e685513') in 0.068157 seconds 
+  Import took 0.092451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_1_c.wav
+  artifactKey: Guid(d77cc493b233845f79cf93cad2329cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_1_c.wav using Guid(d77cc493b233845f79cf93cad2329cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6429cf6c764b244761058198ce123bd2') in 0.064086 seconds 
+  Import took 0.068262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_1_d.wav
+  artifactKey: Guid(22e29313140e9439a80ce7d5fe8474b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_1_d.wav using Guid(22e29313140e9439a80ce7d5fe8474b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '281439767e37461d5669524583cc52e8') in 0.140310 seconds 
+  Import took 0.144798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_3_c.wav
+  artifactKey: Guid(b07deb9d915c74a28ba58168cb1bc78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_3_c.wav using Guid(b07deb9d915c74a28ba58168cb1bc78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d0de10759bee3a0385af2346c45649') in 0.125617 seconds 
+  Import took 0.129641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_1_e.wav
+  artifactKey: Guid(0a058bdf7601d49cf88cccec04736ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_1_e.wav using Guid(0a058bdf7601d49cf88cccec04736ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c61db67aee3682847867b530d766a3') in 0.131961 seconds 
+  Import took 0.136057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_1_d.wav
+  artifactKey: Guid(906f0f9d9874c46458ec6f08f3eaf959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_1_d.wav using Guid(906f0f9d9874c46458ec6f08f3eaf959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d406ff83ed65910af94cb76831e12af') in 0.032214 seconds 
+  Import took 0.048376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_6_c.wav
+  artifactKey: Guid(0329a5fe4bc734e0895860bec203357d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_6_c.wav using Guid(0329a5fe4bc734e0895860bec203357d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9b5b1fd6adae7d50e2c75464385ed5') in 0.057131 seconds 
+  Import took 0.061431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_3_a.wav
+  artifactKey: Guid(bf7a3161fe44c42469f08762346ed300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_3_a.wav using Guid(bf7a3161fe44c42469f08762346ed300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35754508208bbb05aed1ee967de95675') in 0.045997 seconds 
+  Import took 0.050237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000569 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_3_d.wav
+  artifactKey: Guid(6d5862dbfd4d648089e41c790f513d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_3_d.wav using Guid(6d5862dbfd4d648089e41c790f513d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313a9418647707a4b6f81e7bae75dee7') in 0.229973 seconds 
+  Import took 0.283009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_2_c.wav
+  artifactKey: Guid(bd2e96cb98b5642d0b5b53c04f9dc779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_2_c.wav using Guid(bd2e96cb98b5642d0b5b53c04f9dc779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8649b3bd83496a57b03ab71ef28c3d9') in 0.052856 seconds 
+  Import took 0.057739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_2_b.wav
+  artifactKey: Guid(ae62051c95a9c40d0837ddf4e873c89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_2_b.wav using Guid(ae62051c95a9c40d0837ddf4e873c89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '527ad3a1ed5b2000c3314aacf08cc7e7') in 0.082589 seconds 
+  Import took 0.086796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000449 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_5_d.wav
+  artifactKey: Guid(ac1760f865a27441089901f5df301272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_5_d.wav using Guid(ac1760f865a27441089901f5df301272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0813014d6674b722e50885d86ae865eb') in 0.046310 seconds 
+  Import took 0.050310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_1_b.wav
+  artifactKey: Guid(0751b9bef37314189b468ae3dd4f236a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_1_b.wav using Guid(0751b9bef37314189b468ae3dd4f236a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740f950d7861b16dbc4bf18ec5c6a4b1') in 0.044810 seconds 
+  Import took 0.060622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_3_b.wav
+  artifactKey: Guid(040a2af96b4114f04a147ea5762fdcbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_3_b.wav using Guid(040a2af96b4114f04a147ea5762fdcbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c488a4769c462386bfd91f509b1f7b6') in 0.059846 seconds 
+  Import took 0.063712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_4_a.wav
+  artifactKey: Guid(12f58e69afb2147d99de7ca1bd6da15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_4_a.wav using Guid(12f58e69afb2147d99de7ca1bd6da15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2457c9b9833ac3c0648bc2c2de23f84a') in 0.049414 seconds 
+  Import took 0.053399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_1_d.wav
+  artifactKey: Guid(59c81458023554bbeb655e7f68a1d9fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_1_d.wav using Guid(59c81458023554bbeb655e7f68a1d9fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404566ac3adf8ac886b33df9445cf42c') in 0.030784 seconds 
+  Import took 0.035918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_1_e.wav
+  artifactKey: Guid(144dafd37a194429b8f854a133322a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_1_e.wav using Guid(144dafd37a194429b8f854a133322a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9044080de1eae72303cadcf0e5a0828d') in 0.036561 seconds 
+  Import took 0.063911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_3_b.wav
+  artifactKey: Guid(56502ccc055074ac9940a740fcca6437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_3_b.wav using Guid(56502ccc055074ac9940a740fcca6437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eebe2d33c9b0e8a54689b8c85110373a') in 0.021147 seconds 
+  Import took 0.025207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000443 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_3_e.wav
+  artifactKey: Guid(8ba304d27c10548f68488467b089ac35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_3_e.wav using Guid(8ba304d27c10548f68488467b089ac35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cdc2ad8f8ecf1f7e926eb373797cc24') in 0.069114 seconds 
+  Import took 0.074122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_4_d.wav
+  artifactKey: Guid(a8ec71187f127404298e0c988c9a8e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_4_d.wav using Guid(a8ec71187f127404298e0c988c9a8e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '909af2a6dda394797ccda205bd64b65d') in 0.046313 seconds 
+  Import took 0.050903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_5_b.wav
+  artifactKey: Guid(915d45db5377e4c4d8b8e40da8a0f0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_5_b.wav using Guid(915d45db5377e4c4d8b8e40da8a0f0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106b6c0fa9cf9c669a9377460182d32d') in 0.048493 seconds 
+  Import took 0.055980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_1_e.wav
+  artifactKey: Guid(c660b8efb5ac940bb8dabd1d1935a599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_1_e.wav using Guid(c660b8efb5ac940bb8dabd1d1935a599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b839061e8dbedd58f20fa45623d629c') in 0.014096 seconds 
+  Import took 0.018855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_2_d.wav
+  artifactKey: Guid(9fe3f55c6e2e448e5afd00292c118e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_2_d.wav using Guid(9fe3f55c6e2e448e5afd00292c118e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aa385767d6834e083215bbae3dc432b') in 0.030254 seconds 
+  Import took 0.045078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_1_b.wav
+  artifactKey: Guid(8badc0da1325a4aa69ed64a618522920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_1_b.wav using Guid(8badc0da1325a4aa69ed64a618522920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f6b538ab16fee52c7ea3b14455da67a') in 0.009805 seconds 
+  Import took 0.014912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_3_a.wav
+  artifactKey: Guid(3c8ce273458da49ed99d51dac30f2b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_3_a.wav using Guid(3c8ce273458da49ed99d51dac30f2b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acebd3a2461f8481d299954c9edf1e9e') in 0.063257 seconds 
+  Import took 0.069328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_4_c.wav
+  artifactKey: Guid(006da626310664f5b819b48991778b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_4_c.wav using Guid(006da626310664f5b819b48991778b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31fcb525ef39a093c26b63d70547dcd0') in 0.040462 seconds 
+  Import took 0.044619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_1_c.wav
+  artifactKey: Guid(95b196d1b75434e8d817188451a9dca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_1_c.wav using Guid(95b196d1b75434e8d817188451a9dca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960c53cfa49b3e61cd7881258fb42117') in 0.059056 seconds 
+  Import took 0.063113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_3_e.wav
+  artifactKey: Guid(3be0d8b11f85a406fa92059bf6343405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_3_e.wav using Guid(3be0d8b11f85a406fa92059bf6343405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd044544105faeaa7983973a9949bd115') in 0.029586 seconds 
+  Import took 0.047695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_bell_1_a.wav
+  artifactKey: Guid(b3f210289cf8f4473a7e2fcf62618a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_bell_1_a.wav using Guid(b3f210289cf8f4473a7e2fcf62618a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4159d70c72d08a9ed64546d8ece434d1') in 0.020770 seconds 
+  Import took 0.024996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_1_c.wav
+  artifactKey: Guid(907b1ca3dc56549228badef9c1138fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_1_c.wav using Guid(907b1ca3dc56549228badef9c1138fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1b3910705736bb09cb9ee270a3f723e') in 0.020352 seconds 
+  Import took 0.025097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_4_b.wav
+  artifactKey: Guid(9e2866d61a5964abf8250d1020a24530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_4_b.wav using Guid(9e2866d61a5964abf8250d1020a24530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208cd14103b247553b2a113cc96fd780') in 0.015988 seconds 
+  Import took 0.020880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_1_a.wav
+  artifactKey: Guid(91ea64cd2e1ef4ab88d9b54d7a393462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_1_a.wav using Guid(91ea64cd2e1ef4ab88d9b54d7a393462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60dab505a936a541e7f704320ab50f5d') in 0.037002 seconds 
+  Import took 0.042651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_2_e.wav
+  artifactKey: Guid(c49966c685b3d43a2bb270f34809f745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_2_e.wav using Guid(c49966c685b3d43a2bb270f34809f745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc842471b06423ff7d78ef8a14fde5f') in 0.046495 seconds 
+  Import took 0.068018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_bell_1_b.wav
+  artifactKey: Guid(47aff1a04d15540d19ef0b49797fa7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_bell_1_b.wav using Guid(47aff1a04d15540d19ef0b49797fa7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0939302d6ec9a7f93c5c3034756793a4') in 0.038345 seconds 
+  Import took 0.058279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_3_c.wav
+  artifactKey: Guid(70b3b322618be44879886f27f311aeb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_3_c.wav using Guid(70b3b322618be44879886f27f311aeb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7166b6dd89fe0513684f81a37dcfb922') in 0.009918 seconds 
+  Import took 0.026722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_1_d.wav
+  artifactKey: Guid(b3b2e10a75d0c42d28fe48b085eee1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_1_d.wav using Guid(b3b2e10a75d0c42d28fe48b085eee1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '878eba5aa2dcedd5c34f114b6291859b') in 0.041925 seconds 
+  Import took 0.057336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_3_e.wav
+  artifactKey: Guid(e4158cf05698640c0962ed63f3bf9b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_3_e.wav using Guid(e4158cf05698640c0962ed63f3bf9b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3c041b5a394e515af14216ca968d25') in 0.009574 seconds 
+  Import took 0.014100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_5_c.wav
+  artifactKey: Guid(de46d9d91c0f54603bf583bae0f730d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_5_c.wav using Guid(de46d9d91c0f54603bf583bae0f730d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284f76f795ef8dda34f3eb4b1c953b0b') in 0.047623 seconds 
+  Import took 0.052356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_4_e.wav
+  artifactKey: Guid(738dd254887474bc39d166a5efef0001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_4_e.wav using Guid(738dd254887474bc39d166a5efef0001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05692274e8131aebabe8f1de1173ef1d') in 0.047195 seconds 
+  Import took 0.051556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_4_a.wav
+  artifactKey: Guid(f082bed7b69d84929a330b47e222c628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_4_a.wav using Guid(f082bed7b69d84929a330b47e222c628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '524fb35fb318e594c5ae22e5c1ab26f6') in 0.030054 seconds 
+  Import took 0.035476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_1_c.wav
+  artifactKey: Guid(8d35097f977614eeaa182e73941c6d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_1_c.wav using Guid(8d35097f977614eeaa182e73941c6d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6484369712f8b953e8e4994ab4eac5') in 0.020637 seconds 
+  Import took 0.025536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_6_b.wav
+  artifactKey: Guid(f47993054e74e4d2f87cfb7fda1c89d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_6_b.wav using Guid(f47993054e74e4d2f87cfb7fda1c89d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '785474e8740f2cfd544978b9b86917f2') in 0.010355 seconds 
+  Import took 0.015485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_2_a.wav
+  artifactKey: Guid(964e5057437f54c4ab7e541cd046f180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_2_a.wav using Guid(964e5057437f54c4ab7e541cd046f180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe184ecad4b53664d902e95b8173f690') in 0.018084 seconds 
+  Import took 0.023251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_4_e.wav
+  artifactKey: Guid(2ffc7c0373ec54e7d902c18e128506ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_4_e.wav using Guid(2ffc7c0373ec54e7d902c18e128506ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb7d82bb1cc554a390b8267409cc3d3d') in 0.014831 seconds 
+  Import took 0.020094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000492 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_bell_1_e.wav
+  artifactKey: Guid(247e9adf61ec346859db4857417026b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_bell_1_e.wav using Guid(247e9adf61ec346859db4857417026b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b57f07304f33fa42c755503ddbf227') in 0.038868 seconds 
+  Import took 0.044199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_2_d.wav
+  artifactKey: Guid(faa55bbb24e1142f5aeb1c6e49262f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_2_d.wav using Guid(faa55bbb24e1142f5aeb1c6e49262f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f75b3a90afe9aedac47ad590ad085a9') in 0.026921 seconds 
+  Import took 0.031647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_2_e.wav
+  artifactKey: Guid(dad8ea7c8c50c4ceb9a8b933824e72a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_2_e.wav using Guid(dad8ea7c8c50c4ceb9a8b933824e72a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '788ef23822093ee39210fbe8d560a3eb') in 0.036682 seconds 
+  Import took 0.041216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_2_b.wav
+  artifactKey: Guid(3ef8bb48c293b419594751193fcf85d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_2_b.wav using Guid(3ef8bb48c293b419594751193fcf85d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a80a6eefbbae8db5d9fd5b25bd59e5') in 0.024061 seconds 
+  Import took 0.028775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000503 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_6_a.wav
+  artifactKey: Guid(221601a24edd24d41af64a7f85555719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_6_a.wav using Guid(221601a24edd24d41af64a7f85555719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78bfc129066830be889e9ac80c6d1787') in 0.014259 seconds 
+  Import took 0.019217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_1_b.wav
+  artifactKey: Guid(3a561d8129ab04bd0a08d0c43a4e7f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_1_b.wav using Guid(3a561d8129ab04bd0a08d0c43a4e7f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba83f866de6718c4b96b20173ca847cd') in 0.010381 seconds 
+  Import took 0.014800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_3_d.wav
+  artifactKey: Guid(6b1d34befb7314ea7a9109e3de30986d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_3_d.wav using Guid(6b1d34befb7314ea7a9109e3de30986d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d0f3acedb4c63a9e06649f6b5c862dc') in 0.012168 seconds 
+  Import took 0.024384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_4_d.wav
+  artifactKey: Guid(c513871dfd8a64e359b7ca4a54c9cdd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_4_d.wav using Guid(c513871dfd8a64e359b7ca4a54c9cdd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c9288bbd241e74e704c419f4ec81a4') in 0.016379 seconds 
+  Import took 0.033353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_2_d.wav
+  artifactKey: Guid(2596050e6d3884f8d9b5ac33d8778e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_2_d.wav using Guid(2596050e6d3884f8d9b5ac33d8778e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1a190ee04df8544cb26f77a925be6b') in 0.021306 seconds 
+  Import took 0.026296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000471 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_3_c.wav
+  artifactKey: Guid(184fe42a41b36447ebbc6fa81bdc3a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_3_c.wav using Guid(184fe42a41b36447ebbc6fa81bdc3a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaf97920be9edda810c6913f8f746e57') in 0.012806 seconds 
+  Import took 0.017714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_2_a.wav
+  artifactKey: Guid(add2d69d7e7814947a64361159868172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_2_a.wav using Guid(add2d69d7e7814947a64361159868172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15e6b118245cab6098c6c35fb1feee8d') in 0.011025 seconds 
+  Import took 0.025913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_2_b.wav
+  artifactKey: Guid(5790f90169d4e478d93052d049472d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_2_b.wav using Guid(5790f90169d4e478d93052d049472d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fa44dc21ec1dd859214492c9cd301ba') in 0.010401 seconds 
+  Import took 0.017634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_2_e.wav
+  artifactKey: Guid(e305c73a1add44a87b8e6d8524454eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_2_e.wav using Guid(e305c73a1add44a87b8e6d8524454eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6558a83d12d345b7ace545f894468d48') in 0.015731 seconds 
+  Import took 0.019933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_2_c.wav
+  artifactKey: Guid(15bbc04ee355747e4b3bb8871f66ed2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_2_c.wav using Guid(15bbc04ee355747e4b3bb8871f66ed2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '736ea7a2a7c549282fd6c8050db3a10e') in 0.011362 seconds 
+  Import took 0.019102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_1_b.wav
+  artifactKey: Guid(b89e3ee719cb14af88eeb54d5664bd1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_1_b.wav using Guid(b89e3ee719cb14af88eeb54d5664bd1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '697674c4671ca16e38a948a239e97499') in 0.014508 seconds 
+  Import took 0.019509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_2_c.wav
+  artifactKey: Guid(ad74ea0baa972443bb68448859fed5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_2_c.wav using Guid(ad74ea0baa972443bb68448859fed5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '011f5261aa4dd9d52e73be01f4881b59') in 0.017522 seconds 
+  Import took 0.021972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_1_a.wav
+  artifactKey: Guid(3a1b93df067b24be3b5db50f54007e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_1_a.wav using Guid(3a1b93df067b24be3b5db50f54007e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d50d9cf0995050de4699c317f4279c2') in 0.009186 seconds 
+  Import took 0.014745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_5_e.wav
+  artifactKey: Guid(1e1f8f7816b7245b497c46ad50afc2fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_5_e.wav using Guid(1e1f8f7816b7245b497c46ad50afc2fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb57998a59e49e283e7b78f16d1792de') in 0.032623 seconds 
+  Import took 0.037567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_4_b.wav
+  artifactKey: Guid(f3186f92a2c3a4ad49ddf35bf71ed069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_4_b.wav using Guid(f3186f92a2c3a4ad49ddf35bf71ed069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19150aca918f5f0f0a907a51592789b4') in 0.024562 seconds 
+  Import took 0.029688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_2_d.wav
+  artifactKey: Guid(fb195b536fe24446396ac97e80c9521a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_2_d.wav using Guid(fb195b536fe24446396ac97e80c9521a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8fb686c7658c0c40d44dbc021fe45af') in 0.030205 seconds 
+  Import took 0.035577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_3_d.wav
+  artifactKey: Guid(0a418df78d8564248a44e04fb21205e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_3_d.wav using Guid(0a418df78d8564248a44e04fb21205e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a72109be6b1bf68a8a814335a72bb7') in 0.029587 seconds 
+  Import took 0.034563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_bell_1_c.wav
+  artifactKey: Guid(6e9c02bbea51845d9a3745e38e2dcd7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_bell_1_c.wav using Guid(6e9c02bbea51845d9a3745e38e2dcd7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bbf55c95209ac7643d462b9f1e023aa') in 0.028784 seconds 
+  Import took 0.033645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_2_b.wav
+  artifactKey: Guid(5175a1abb00d54e5a82507fae44342a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_2_b.wav using Guid(5175a1abb00d54e5a82507fae44342a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f49c943bda766742691d331b6e12d65e') in 0.018164 seconds 
+  Import took 0.022942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_2_c.wav
+  artifactKey: Guid(2562482e1f54141ca8b14f677f30b025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_2_c.wav using Guid(2562482e1f54141ca8b14f677f30b025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae6d5ae521d7a557ec7b2aa9ab9a7632') in 0.009217 seconds 
+  Import took 0.014720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_1_e.wav
+  artifactKey: Guid(e9bcf3215926b4a3d93727c64cb38d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_1_e.wav using Guid(e9bcf3215926b4a3d93727c64cb38d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39e1a85ce8c45a77e8285d0071ceae8e') in 0.009666 seconds 
+  Import took 0.014568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_2_e.wav
+  artifactKey: Guid(36918866a498e4d019f161199d4398cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_2_e.wav using Guid(36918866a498e4d019f161199d4398cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12e4ea52b5258b1b5e09792c736e2dea') in 0.011247 seconds 
+  Import took 0.016349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_1_a.wav
+  artifactKey: Guid(820931fb511624737beb248c33a8b77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_chord_1_a.wav using Guid(820931fb511624737beb248c33a8b77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd320b189596d80164eecec93c34a7426') in 0.039291 seconds 
+  Import took 0.044258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_5_a.wav
+  artifactKey: Guid(6cda087799c3748ff9baf27f077cc9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_5_a.wav using Guid(6cda087799c3748ff9baf27f077cc9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529bee0feafe74ca9821646ce6ba6ee9') in 0.028032 seconds 
+  Import took 0.032246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_6_e.wav
+  artifactKey: Guid(9bf0f9ecb633a4acbaa8792458bb962f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_swap_6_e.wav using Guid(9bf0f9ecb633a4acbaa8792458bb962f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f784c12ca12978539f604a0b372762ed') in 0.017846 seconds 
+  Import took 0.022526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_2_a.wav
+  artifactKey: Guid(8d0e88227826846349fd89de28b4cfe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_organ_2_a.wav using Guid(8d0e88227826846349fd89de28b4cfe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28eee59753dde62f02726b5007594afa') in 0.009501 seconds 
+  Import took 0.022758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_3_a.wav
+  artifactKey: Guid(b6c735b77c0324bcead25c2dbc3cc946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Score and Times - Game Sound Solutions/Electronic/Score_saw_3_a.wav using Guid(b6c735b77c0324bcead25c2dbc3cc946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cab1beace5b11a8833d9cf48461b1da') in 0.013506 seconds 
+  Import took 0.018685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1104.969285 seconds.
+  path: Assets/fredy's project/Scenes/LevelLayout 1.unity
+  artifactKey: Guid(cc3dd6d2c27f34380b4601c9fb3da69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/Scenes/LevelLayout 1.unity using Guid(cc3dd6d2c27f34380b4601c9fb3da69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16bc70b0fb8a2c2392797e987f3beeb') in 0.001757 seconds 
+  Import took 0.030342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 758.898578 seconds.
+  path: Assets/cardboard-xr-samples/hellocardboard-unity/Sprites
+  artifactKey: Guid(8e40f91743f083648a669cca99dc493b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/cardboard-xr-samples/hellocardboard-unity/Sprites using Guid(8e40f91743f083648a669cca99dc493b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ecded3204e4b2a42edd50990a8215ff') in 0.001386 seconds 
+  Import took 0.006882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.816098 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets
+  artifactKey: Guid(512a49d95c0c4332bdd98131869c23c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets using Guid(512a49d95c0c4332bdd98131869c23c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b31814b8e9a6a2d42a48cf87797f0e5e') in 0.001602 seconds 
+  Import took 0.006901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.128120 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+  artifactKey: Guid(c41005c129ba4d66911b75229fd70b45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset using Guid(c41005c129ba4d66911b75229fd70b45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '093a2cdfc4701742cd4e2e9653a3929b') in 0.951601 seconds 
+  Import took 0.957046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.788483 seconds.
+  path: Assets/TextMesh Pro/Resources/TMP Settings.asset
+  artifactKey: Guid(3f5b5dff67a942289a9defa416b206f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/TMP Settings.asset using Guid(3f5b5dff67a942289a9defa416b206f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80217e6c75f9d2e4957cbc8093faaf48') in 0.069562 seconds 
+  Import took 0.074612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.135476 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets
+  artifactKey: Guid(3ac6db30e75b49b282a3564110579f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets using Guid(3ac6db30e75b49b282a3564110579f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a20c5418f0d75fa663f7c84a7a30e4') in 0.001402 seconds 
+  Import took 0.006645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.203234 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/DropCap Numbers.asset
+  artifactKey: Guid(14aa93acbb234d16aaef0e8b46814db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/DropCap Numbers.asset using Guid(14aa93acbb234d16aaef0e8b46814db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5fe000754d83138639e744235cca8ac') in 0.006143 seconds 
+  Import took 0.011343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.767947 seconds.
+  path: Assets/TextMesh Pro/Sprites
+  artifactKey: Guid(d0603b6d5186471b96c778c3949c7ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites using Guid(d0603b6d5186471b96c778c3949c7ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c825b4ecabc52a724fdd8944d5209777') in 0.001536 seconds 
+  Import took 0.006481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073553 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '461de82cd83b6ace2f2bb42f6d30c826') in 0.731180 seconds 
+  Import took 0.736361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.090111 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat
+  artifactKey: Guid(22262639920f43d6be32430e4e58350d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat using Guid(22262639920f43d6be32430e4e58350d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f087dcf16cec75a6974325e7c470dd37') in 0.702850 seconds 
+  Import took 0.708177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.911103 seconds.
+  path: Assets/SimpleFantasyInteriors/Textures
+  artifactKey: Guid(d8a15346b18a2419f8a1d89f530640ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleFantasyInteriors/Textures using Guid(d8a15346b18a2419f8a1d89f530640ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0af42d99454277d3b23dbdf10a488f2c') in 0.001449 seconds 
+  Import took 0.006811 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002785 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.720 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1721ms)
+		BeginReloadAssembly (180ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (91ms)
+		EndReloadAssembly (1446ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (483ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (618ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (187ms)
+				ProcessInitializeOnLoadAttributes (414ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2366 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 231.5 MB.
+System memory in use after: 231.7 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2943.
+Total: 4.181560 ms (FindLiveObjects: 0.320567 ms CreateObjectMapping: 0.146482 ms MarkObjects: 3.640071 ms  DeleteObjects: 0.072986 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 166.885022 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Models/Railing2r.fbx
+  artifactKey: Guid(e8a2f8f74a029c24eb8b85974f4b9e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Models/Railing2r.fbx using Guid(e8a2f8f74a029c24eb8b85974f4b9e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dc43545fa11895488a79c2feb217a96') in 0.522542 seconds 
+  Import took 0.528029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011471 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_5_roughness.png
+  artifactKey: Guid(f5bc4ce3c8a3da546b2fa1438424cff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_5_roughness.png using Guid(f5bc4ce3c8a3da546b2fa1438424cff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '768c03c27832d9a5ed3f06c1f16a09b1') in 0.092497 seconds 
+  Import took 0.097502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_1_roughness.png
+  artifactKey: Guid(7da915bb8774d9741b91ce6046706fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_1_roughness.png using Guid(7da915bb8774d9741b91ce6046706fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc9cb9d9f8fc2837096c0594ae2a313') in 0.078500 seconds 
+  Import took 0.082582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_2_roughness.png
+  artifactKey: Guid(c86131bec5cb44c4f99db1c11709639e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_2_roughness.png using Guid(c86131bec5cb44c4f99db1c11709639e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53df3c743cceaacfb9c6ed58043dafc1') in 0.069770 seconds 
+  Import took 0.074043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Models/Railing1m.fbx
+  artifactKey: Guid(782a33834de229f449795fb7015abe8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Models/Railing1m.fbx using Guid(782a33834de229f449795fb7015abe8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23489c6a966dc33f2e8265d391be41c3') in 0.058881 seconds 
+  Import took 0.062877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_4_roughness.png
+  artifactKey: Guid(60db287fcb6b38f4b8bbc43e3ad3cd31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_4_roughness.png using Guid(60db287fcb6b38f4b8bbc43e3ad3cd31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8dcf2abb524e6bfcfc98c6c4a9125a0') in 0.041446 seconds 
+  Import took 0.046220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_6_roughness.png
+  artifactKey: Guid(34ea401025b97b44cba66b7bfdbf1b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_6_roughness.png using Guid(34ea401025b97b44cba66b7bfdbf1b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e58b5660c5a8377c5b56e83f59d5041') in 0.069534 seconds 
+  Import took 0.086766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_7_roughness.png
+  artifactKey: Guid(4d8107465a1dc9a4093a7c9875682950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_7_roughness.png using Guid(4d8107465a1dc9a4093a7c9875682950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a636ac7dc1b274a684c75dcfa3018087') in 0.066789 seconds 
+  Import took 0.076825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Models/Railing3r.fbx
+  artifactKey: Guid(ddcd05b23f51c854a8ff680965fcffe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Models/Railing3r.fbx using Guid(ddcd05b23f51c854a8ff680965fcffe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f88430e4fac4eaebec847901a607c627') in 0.060247 seconds 
+  Import took 0.064921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_3_roughness.png
+  artifactKey: Guid(21119f9b0103daa4593c60de57bb52b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_3_roughness.png using Guid(21119f9b0103daa4593c60de57bb52b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dde8d5c698900a6c2176c70cb4a6c59') in 0.082333 seconds 
+  Import took 0.086370 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003201 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.730 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1730ms)
+		BeginReloadAssembly (172ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (87ms)
+		EndReloadAssembly (1465ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (484ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (633ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (189ms)
+				ProcessInitializeOnLoadAttributes (426ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2366 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 236.1 MB.
+System memory in use after: 236.3 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2950.
+Total: 4.311709 ms (FindLiveObjects: 0.353998 ms CreateObjectMapping: 0.192661 ms MarkObjects: 3.690361 ms  DeleteObjects: 0.073600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002893 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.957 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1957ms)
+		BeginReloadAssembly (195ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (96ms)
+		EndReloadAssembly (1652ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (547ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (709ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (212ms)
+				ProcessInitializeOnLoadAttributes (476ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2366 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 236.3 MB.
+System memory in use after: 236.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2953.
+Total: 5.240764 ms (FindLiveObjects: 0.326046 ms CreateObjectMapping: 0.105745 ms MarkObjects: 4.722225 ms  DeleteObjects: 0.085223 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1205.477660 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans SDF.asset
+  artifactKey: Guid(2636f2a5bff2946b8a44be6329d4263a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans SDF.asset using Guid(2636f2a5bff2946b8a44be6329d4263a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b28125a1fa9f1e010082534e331056') in 0.455396 seconds 
+  Import took 0.460720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/SimpleFantasy/Materials/Medieval_Material.mat
+  artifactKey: Guid(d726a65f2eaae8847857d20bb327828e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleFantasy/Materials/Medieval_Material.mat using Guid(d726a65f2eaae8847857d20bb327828e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05dbf3f9f96e0e76f0a49b5160010d9a') in 0.152419 seconds 
+  Import took 0.157242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c2210586957436df79bf961aeff06e') in 0.284085 seconds 
+  Import took 0.288456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Rollers/Textures/Wide Roller_DefaultMaterial_MetallicSmoothness.png
+  artifactKey: Guid(517ad8c42431fcb44b7d899316075348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Rollers/Textures/Wide Roller_DefaultMaterial_MetallicSmoothness.png using Guid(517ad8c42431fcb44b7d899316075348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a33ff3b05ac601eeefcb939ef2e8468') in 0.115330 seconds 
+  Import took 0.119855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Rollers/Textures/Roller_DefaultMaterial_AlbedoTransparency.png
+  artifactKey: Guid(9306fac0d86bf9747a177b4e9f13ae3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Rollers/Textures/Roller_DefaultMaterial_AlbedoTransparency.png using Guid(9306fac0d86bf9747a177b4e9f13ae3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca086be15adf7f3e47940e0d84852ca') in 0.071896 seconds 
+  Import took 0.076464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Rollers/Textures/Wide Roller_DefaultMaterial_Normal.png
+  artifactKey: Guid(a916b9ef9f282bf4a84311fe272fbc31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Rollers/Textures/Wide Roller_DefaultMaterial_Normal.png using Guid(a916b9ef9f282bf4a84311fe272fbc31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2231453b1d11d87213b6ef7a68498a04') in 0.125352 seconds 
+  Import took 0.129813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Rollers/Textures/Wide Roller_DefaultMaterial_AlbedoTransparency.png
+  artifactKey: Guid(30103ca64c237a142ab3073d7281c609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Rollers/Textures/Wide Roller_DefaultMaterial_AlbedoTransparency.png using Guid(30103ca64c237a142ab3073d7281c609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa9fed9c1e2c14fc0c27611fdc10bb9') in 0.083308 seconds 
+  Import took 0.087419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1280cc7be10b532b2897fc8654f95d3') in 0.032607 seconds 
+  Import took 0.037236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/fredy's project/TSA Resources/Objects/Low Poly Fruits/Materials/Material.001.mat
+  artifactKey: Guid(2629bdb5f95d3aa4c8ff0bbc8840c7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Objects/Low Poly Fruits/Materials/Material.001.mat using Guid(2629bdb5f95d3aa4c8ff0bbc8840c7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba789ae600f7c7938899b53f7bfaf242') in 0.112959 seconds 
+  Import took 0.117957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
+  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961110dfb27e9c23f122037f6e3f08c2') in 0.030404 seconds 
+  Import took 0.034980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Rollers/Textures/Roller_DefaultMaterial_Normal.png
+  artifactKey: Guid(34d96bdb105de2b4cb4e8690d515b630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Rollers/Textures/Roller_DefaultMaterial_Normal.png using Guid(34d96bdb105de2b4cb4e8690d515b630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a74a55e97714bc4c5c2728caa45f2ee') in 0.065727 seconds 
+  Import took 0.070341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.204025 seconds.
+  path: Assets/fredy's project/TSA Resources/Objects/Coins/Devtoid - Gold Coins/3D Assets/Silver Coins/Material
+  artifactKey: Guid(2c440243a71d74e4db524b01308a2f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Objects/Coins/Devtoid - Gold Coins/3D Assets/Silver Coins/Material using Guid(2c440243a71d74e4db524b01308a2f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38f3abecccbc131a99e07bb0408b271') in 0.036656 seconds 
+  Import took 0.041293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.845886 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_1_metallic.png
+  artifactKey: Guid(d49a90bb9cd85574387a021c799af504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_1_metallic.png using Guid(d49a90bb9cd85574387a021c799af504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70314761c43f278a1a7f047878ef3445') in 0.198974 seconds 
+  Import took 0.203877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/fredy's project/TSA Resources/Objects/Coins/Devtoid - Gold Coins/3D Assets/Copper Coins/Textures/CopperCoins_Normal.png
+  artifactKey: Guid(55718a194e561064fb47129fc161b8c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Objects/Coins/Devtoid - Gold Coins/3D Assets/Copper Coins/Textures/CopperCoins_Normal.png using Guid(55718a194e561064fb47129fc161b8c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '908e8efa9ac4b15058b145e6a35b21a5') in 0.115781 seconds 
+  Import took 0.120062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_5_metallic.png
+  artifactKey: Guid(303adf4031224f141956446e5175fb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_5_metallic.png using Guid(303adf4031224f141956446e5175fb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc3d645882987fe6de8e3204141aea5') in 0.122635 seconds 
+  Import took 0.126955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_1_normal.png
+  artifactKey: Guid(1d7402f216e32d64cbae8c74aa75dc82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_1_normal.png using Guid(1d7402f216e32d64cbae8c74aa75dc82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57ceba796decf351bdc30bfe022ec82') in 0.169014 seconds 
+  Import took 0.174030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_4_normal.png
+  artifactKey: Guid(cf44cb05a5761e64daf8c60748af0392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_4_normal.png using Guid(cf44cb05a5761e64daf8c60748af0392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016eba813554e6c475c39057c6c1e8b1') in 0.168749 seconds 
+  Import took 0.173426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_1_normal.png
+  artifactKey: Guid(1d7402f216e32d64cbae8c74aa75dc82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_1_normal.png using Guid(1d7402f216e32d64cbae8c74aa75dc82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57ceba796decf351bdc30bfe022ec82') in 0.012273 seconds 
+  Import took 0.016305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_4_metallic.png
+  artifactKey: Guid(83c4da60e1ed9cd418b24089d7fd0ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_4_metallic.png using Guid(83c4da60e1ed9cd418b24089d7fd0ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fcfad6c992840c14e23254dff67fd7f') in 0.039571 seconds 
+  Import took 0.056636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/cardboard-xr-samples/hellocardboard-unity/Environments/CubeRoom.prefab
+  artifactKey: Guid(c43602d5712fe4fd4bf33173bb6b8e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/cardboard-xr-samples/hellocardboard-unity/Environments/CubeRoom.prefab using Guid(c43602d5712fe4fd4bf33173bb6b8e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9a6d360a2c61a8629e02a6023033011') in 0.282242 seconds 
+  Import took 0.287075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002308 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_7_metallic.png
+  artifactKey: Guid(af957ed090fb59a42ae7ee4a7ddf2720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_7_metallic.png using Guid(af957ed090fb59a42ae7ee4a7ddf2720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f22cd98a4be0a7d6e11b072c7a20ace') in 0.069831 seconds 
+  Import took 0.074310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_2_normal.png
+  artifactKey: Guid(f814be5e5ad8ae945b537a5b5d481386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_2_normal.png using Guid(f814be5e5ad8ae945b537a5b5d481386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ee2ead41ae34c0ac5970152e1a1f29b') in 0.065601 seconds 
+  Import took 0.069809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_5_normal.png
+  artifactKey: Guid(fa8209cf3d86b2748a3ebe0adda0a511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_5_normal.png using Guid(fa8209cf3d86b2748a3ebe0adda0a511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdb8e11d983aa7453598c602cd8d326d') in 0.089698 seconds 
+  Import took 0.105555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_6_metallic.png
+  artifactKey: Guid(87a16d42f472ec9458b25964ba130549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_6_metallic.png using Guid(87a16d42f472ec9458b25964ba130549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fed1e648aacfded32f41994a5416da77') in 0.066509 seconds 
+  Import took 0.070500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_3_normal.png
+  artifactKey: Guid(39e398ac0dce2b647ae92c33028dd29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_3_normal.png using Guid(39e398ac0dce2b647ae92c33028dd29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f3c76c78b773553c34b63a66a42a161') in 0.012498 seconds 
+  Import took 0.016610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_2_metallic.png
+  artifactKey: Guid(b873c9d2cdee50c4f89d3ffa5c5fb337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_2_metallic.png using Guid(b873c9d2cdee50c4f89d3ffa5c5fb337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2cf680b27bfcab64396ccc2aa57ce35') in 0.049681 seconds 
+  Import took 0.055195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000510 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_3_metallic.png
+  artifactKey: Guid(de47ec0a18fea71498effff5a16d7cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_3_metallic.png using Guid(de47ec0a18fea71498effff5a16d7cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae22838cf3fd24cb9d94cad7749c3b8e') in 0.013401 seconds 
+  Import took 0.018546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/fredy's project/TSA Resources/Objects/Police/Police_Officer_SC/Textures/cop_blue_metal_unity.tga
+  artifactKey: Guid(934d9276fc3644b739c3c633dfbe73d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Objects/Police/Police_Officer_SC/Textures/cop_blue_metal_unity.tga using Guid(934d9276fc3644b739c3c633dfbe73d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba5a02e92e4b21f73251a26aed63262') in 0.690651 seconds 
+  Import took 0.694785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002970 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_7_normal.png
+  artifactKey: Guid(bde025951ac56c64197b06b5d712fec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_7_normal.png using Guid(bde025951ac56c64197b06b5d712fec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5513b634a14c2767970b603f207706ac') in 0.092146 seconds 
+  Import took 0.096723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_6_normal.png
+  artifactKey: Guid(2591dc394c7fd844b8248f331eb922d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/fredy's project/TSA Resources/Conveyor/ModularConveyorTools/Demo/Materials/Conveyors/Textures/Conveyor_6_normal.png using Guid(2591dc394c7fd844b8248f331eb922d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff58337cb417ce7b589e638e05b2b1e8') in 0.062670 seconds 
+  Import took 0.066662 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003393 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.910 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1910ms)
+		BeginReloadAssembly (207ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (107ms)
+		EndReloadAssembly (1591ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (572ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (643ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (196ms)
+				ProcessInitializeOnLoadAttributes (429ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2366 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 245.3 MB.
+System memory in use after: 245.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2962.
+Total: 3.996658 ms (FindLiveObjects: 0.352219 ms CreateObjectMapping: 0.130867 ms MarkObjects: 3.412015 ms  DeleteObjects: 0.092000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002900 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.851 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1851ms)
+		BeginReloadAssembly (187ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (93ms)
+		EndReloadAssembly (1560ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (534ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (646ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (204ms)
+				ProcessInitializeOnLoadAttributes (423ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2366 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 245.5 MB.
+System memory in use after: 245.7 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2965.
+Total: 4.588557 ms (FindLiveObjects: 0.365664 ms CreateObjectMapping: 0.200545 ms MarkObjects: 3.943423 ms  DeleteObjects: 0.077817 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003619 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.740 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1741ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (83ms)
+		EndReloadAssembly (1476ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (476ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (655ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (191ms)
+				ProcessInitializeOnLoadAttributes (446ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2366 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 245.7 MB.
+System memory in use after: 245.9 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2968.
+Total: 3.894222 ms (FindLiveObjects: 0.290440 ms CreateObjectMapping: 0.100960 ms MarkObjects: 3.425510 ms  DeleteObjects: 0.075965 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003259 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.189 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2189ms)
+		BeginReloadAssembly (216ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (103ms)
+		EndReloadAssembly (1839ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (521ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (923ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (204ms)
+				ProcessInitializeOnLoadAttributes (687ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2366 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 245.9 MB.
+System memory in use after: 246.1 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2971.
+Total: 4.017510 ms (FindLiveObjects: 0.305648 ms CreateObjectMapping: 0.102367 ms MarkObjects: 3.530479 ms  DeleteObjects: 0.077638 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
