@@ -18,7 +18,9 @@ public class Teleportation : MonoBehaviour
 
     public GameObject exit;
 
-    public float offset = 2f;
+    public float offsety = 2f;
+    public float offsetz = 0f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +35,8 @@ public class Teleportation : MonoBehaviour
         if(exit)
         {
             teleExitPos = exit.transform.position;
-            teleExitPos.y += offset;
+            teleExitPos.y += offsety;
+            teleExitPos.z += offsetz;
             teleExitRot = exit.transform.eulerAngles;
         }
         else
