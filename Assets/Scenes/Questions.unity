@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 78184089}
   - component: {fileID: 78184090}
   - component: {fileID: 78184091}
+  - component: {fileID: 78184092}
   m_Layer: 5
   m_Name: Choice6
   m_TagString: Untagged
@@ -347,7 +348,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78184084}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd4b72201e0a6404ebea20ba9bfa1803, type: 3}
   m_Name: 
@@ -383,13 +384,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 78184090}
-          m_TargetAssemblyTypeName: VRButton, Assembly-CSharp
-          m_MethodName: vrOn
+        - m_Target: {fileID: 78184089}
+          m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+          m_MethodName: Answer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -399,22 +400,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 78184090}
-          m_TargetAssemblyTypeName: VRButton, Assembly-CSharp
-          m_MethodName: vrOff
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+--- !u!65 &78184092
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78184084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 249.18893, y: 149.4718, z: 2.791687}
+  m_Center: {x: 0.37934875, y: 5.3327026, z: 0.4967041}
 --- !u!1 &159882777
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,21 +499,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 271976884790048278, guid: 30e55d38650dd449c8c2f72f03195de2, type: 3}
+      propertyPath: far clip plane
+      value: 1500
+      objectReference: {fileID: 0}
     - target: {fileID: 271976884929911649, guid: 30e55d38650dd449c8c2f72f03195de2, type: 3}
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 271976884929911649, guid: 30e55d38650dd449c8c2f72f03195de2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.10380375
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 271976884929911649, guid: 30e55d38650dd449c8c2f72f03195de2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 287
+      value: 502
       objectReference: {fileID: 0}
     - target: {fileID: 271976884929911649, guid: 30e55d38650dd449c8c2f72f03195de2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.09992752
+      value: -483
       objectReference: {fileID: 0}
     - target: {fileID: 271976884929911649, guid: 30e55d38650dd449c8c2f72f03195de2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -549,6 +551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 271976885216817183, guid: 30e55d38650dd449c8c2f72f03195de2, type: 3}
+      propertyPath: far clip plane
+      value: 1500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30e55d38650dd449c8c2f72f03195de2, type: 3}
 --- !u!1 &600831366
@@ -577,7 +583,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600831366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 855}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1721166581}
@@ -586,7 +592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -18, y: 0}
+  m_AnchoredPosition: {x: 1, y: -4}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &600831368
@@ -989,6 +995,7 @@ GameObject:
   - component: {fileID: 962188535}
   - component: {fileID: 962188536}
   - component: {fileID: 962188537}
+  - component: {fileID: 962188538}
   m_Layer: 5
   m_Name: Choice2
   m_TagString: Untagged
@@ -1119,7 +1126,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962188530}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd4b72201e0a6404ebea20ba9bfa1803, type: 3}
   m_Name: 
@@ -1155,13 +1162,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 962188536}
-          m_TargetAssemblyTypeName: VRButton, Assembly-CSharp
-          m_MethodName: vrOn
+        - m_Target: {fileID: 962188535}
+          m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+          m_MethodName: Answer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1171,22 +1178,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 962188536}
-          m_TargetAssemblyTypeName: VRButton, Assembly-CSharp
-          m_MethodName: vrOff
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+--- !u!65 &962188538
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962188530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 249.18893, y: 149.4718, z: 2.791687}
+  m_Center: {x: 0.37934875, y: 5.3327026, z: 0.4967041}
 --- !u!1 &1192189380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,6 +1206,7 @@ GameObject:
   - component: {fileID: 1192189385}
   - component: {fileID: 1192189386}
   - component: {fileID: 1192189387}
+  - component: {fileID: 1192189388}
   m_Layer: 5
   m_Name: Choice4
   m_TagString: Untagged
@@ -1332,7 +1337,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192189380}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd4b72201e0a6404ebea20ba9bfa1803, type: 3}
   m_Name: 
@@ -1368,13 +1373,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 1
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1192189386}
-          m_TargetAssemblyTypeName: VRButton, Assembly-CSharp
-          m_MethodName: vrOff
+        - m_Target: {fileID: 1192189385}
+          m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+          m_MethodName: Answer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1384,22 +1389,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1192189386}
-          m_TargetAssemblyTypeName: VRButton, Assembly-CSharp
-          m_MethodName: vrOn
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+--- !u!65 &1192189388
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192189380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 249.18893, y: 149.4718, z: 2.791687}
+  m_Center: {x: 0.37934875, y: 5.3327026, z: 0.4967041}
 --- !u!1 &1351234297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,6 +1483,7 @@ GameObject:
   - component: {fileID: 1373168071}
   - component: {fileID: 1373168072}
   - component: {fileID: 1373168073}
+  - component: {fileID: 1373168074}
   m_Layer: 5
   m_Name: Choice1
   m_TagString: Untagged
@@ -1611,7 +1614,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373168066}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd4b72201e0a6404ebea20ba9bfa1803, type: 3}
   m_Name: 
@@ -1647,13 +1650,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1373168072}
-          m_TargetAssemblyTypeName: VRButton, Assembly-CSharp
-          m_MethodName: vrOn
+        - m_Target: {fileID: 1373168071}
+          m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+          m_MethodName: Answer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1663,22 +1666,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1373168072}
-          m_TargetAssemblyTypeName: VRButton, Assembly-CSharp
-          m_MethodName: vrOff
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+--- !u!65 &1373168074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373168066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 249.18893, y: 149.4718, z: 2.791687}
+  m_Center: {x: 0.37934875, y: 5.3327026, z: 0.4967041}
 --- !u!1 &1431843837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,7 +1776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1459303358
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1868,6 +1868,7 @@ GameObject:
   - component: {fileID: 1516457108}
   - component: {fileID: 1516457109}
   - component: {fileID: 1516457110}
+  - component: {fileID: 1516457111}
   m_Layer: 5
   m_Name: Choice3
   m_TagString: Untagged
@@ -1998,7 +1999,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516457103}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd4b72201e0a6404ebea20ba9bfa1803, type: 3}
   m_Name: 
@@ -2034,13 +2035,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1516457109}
-          m_TargetAssemblyTypeName: VRButton, Assembly-CSharp
-          m_MethodName: vrOn
+        - m_Target: {fileID: 1516457108}
+          m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+          m_MethodName: Answer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2050,22 +2051,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1516457109}
-          m_TargetAssemblyTypeName: VRButton, Assembly-CSharp
-          m_MethodName: vrOff
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+--- !u!65 &1516457111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516457103}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 249.18893, y: 149.4718, z: 2.791687}
+  m_Center: {x: 0.37934875, y: 5.3327026, z: 0.4967041}
 --- !u!1 &1637461523
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,7 +2082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1637461524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2187,7 +2185,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721166580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 0.25, z: 1}
   m_Children:
   - {fileID: 1911957936}
@@ -2261,7 +2259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1786406116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2365,7 +2363,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807543598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -463}
+  m_LocalPosition: {x: 0, y: 0, z: 450}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 600831367}
@@ -2374,7 +2372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 34, y: 356}
+  m_AnchoredPosition: {x: 31, y: 356}
   m_SizeDelta: {x: 557, y: 518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1807543600
@@ -2683,30 +2681,30 @@ MonoBehaviour:
   QnA:
   - question: What is the Password? (round 1)
     answers:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
+    - password
+    - 1234zyxw
+    - 123456
+    - abcdef
+    - zxywvut
+    - qwerty
     correctAnswer: 2
   - question: What is the Password? (round 2)
     answers:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
+    - passworD
+    - Abcdef
+    - zyxwvuT
+    - Qwerty
+    - PaSsWoRd098
+    - 12345zyxwv
     correctAnswer: 5
   - question: What is the Password? (round 3)
     answers:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
+    - '@P4$5W0rD$'
+    - QwErTy
+    - AbCd1234
+    - zYxWvUt
+    - PaSsWoRd
+    - AbCdEfG
     correctAnswer: 1
   options:
   - {fileID: 1373168066}
@@ -2746,6 +2744,7 @@ GameObject:
   - component: {fileID: 2107300232}
   - component: {fileID: 2107300233}
   - component: {fileID: 2107300234}
+  - component: {fileID: 2107300235}
   m_Layer: 5
   m_Name: Choice5
   m_TagString: Untagged
@@ -2876,7 +2875,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107300227}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd4b72201e0a6404ebea20ba9bfa1803, type: 3}
   m_Name: 
@@ -2912,13 +2911,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2107300233}
-          m_TargetAssemblyTypeName: VRButton, Assembly-CSharp
-          m_MethodName: vrOn
+        - m_Target: {fileID: 2107300232}
+          m_TargetAssemblyTypeName: AnswerScript, Assembly-CSharp
+          m_MethodName: Answer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2928,19 +2927,16 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2107300233}
-          m_TargetAssemblyTypeName: VRButton, Assembly-CSharp
-          m_MethodName: vrOff
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+--- !u!65 &2107300235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107300227}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 249.18893, y: 149.4718, z: 2.791687}
+  m_Center: {x: 0.37934875, y: 5.3327026, z: 0.4967041}
