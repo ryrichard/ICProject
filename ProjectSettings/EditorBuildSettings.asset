@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Map/Scenes/Castle2.unity
     guid: 454d6ad8cbfc649698d56975687f2c8b
+  - enabled: 1
+    path: Assets/Map/Scenes/Questions.unity
+    guid: 285a3ba944b5a4eb9b93b2526674777e
   m_configObjects:
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: ead1b60955de647c48a8db3e1e2236a7, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0b71a6cdf21ab4caca348838dc75c4f2, type: 2}
