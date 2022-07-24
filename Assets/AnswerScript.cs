@@ -24,6 +24,7 @@ public class AnswerScript : MonoBehaviour
         {
             Debug.Log("Wrong Answer");
             wrongWindowOpen();
+            
            
            
         }
@@ -31,15 +32,14 @@ public class AnswerScript : MonoBehaviour
 
     public void wrongWindowOpen()
     {
-       
-        wrongWindow.SetActive(true);
-
+        StartCoroutine(wrongWindowPanel());
     }
 
-    public void wrongWindowClose()
+    IEnumerator wrongWindowPanel()
     {
-        
+        wrongWindow.SetActive(true);
+        yield return new WaitForSeconds(3);
         wrongWindow.SetActive(false);
-
     }
+
 }
