@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 	
 	/// option of slide show patern 
 public enum SlideShowEffects
@@ -37,7 +38,8 @@ public class UISlideShow : MonoBehaviour {
 	#region  PRIVATE_MEMBERS
 	private float waitForNextClick;	///  hold the click between two slides.
 	private Transform currentObj; /// current slide image.
-	private bool onHoldNextClick,onHoldPreviousClick;		/// hold the button continues click.
+	private bool onHoldNextClick,onHoldPreviousClick;       /// hold the button continues click.
+	//private RawImage image;
 
 	#endregion END_PRIVATE REGION
 
@@ -187,4 +189,15 @@ public class UISlideShow : MonoBehaviour {
 			Debug.Log("You are clicked on the "+obj.GetComponent<Image>().sprite.name);
 		}
 	}
+	////*
+	//IEnumerator DownloadImage(string mediaURL)
+	//{
+	//	UnityWebRequest request = UnityWebRequestTexture.GetTexture(mediaURL);
+	//	yield return request.SendWebRequest();
+	//	if (request.isNetworkError || request.isHttpError)
+	//		Debug.Log(request.error);
+	//	else
+	//		image.texture = ((DownloadHandlerTexture)request.downloadHandler).texture;
+
+	//}
 }
