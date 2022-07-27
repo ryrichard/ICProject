@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 6271057726645526739}
   - component: {fileID: 6271057726645526740}
   - component: {fileID: 6271057726645526741}
-  - component: {fileID: 6177987948893928723}
+  - component: {fileID: 4480823964088188966}
   - component: {fileID: 6271057726645526742}
   - component: {fileID: 8974414417634660576}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Village Location Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,7 +98,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6177987948893928723
+--- !u!114 &4480823964088188966
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
