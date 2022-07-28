@@ -663,6 +663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3983cb2b72d41279834eed5bc139fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castleDoor: {fileID: 0}
   inkJSONAsset: {fileID: 4900000, guid: 43b7d290c18f34852962c178e6ec41f5, type: 3}
   prefabDialogBox: {fileID: 2894949041579776041, guid: 9185f1579078d4c21a21cbd102a96dc7, type: 3}
 --- !u!114 &3776640938628221712
@@ -679,7 +680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   qManager: {fileID: 0}
   cButton: {fileID: 0}
-  dbox: {fileID: 0}
+  qdname: {fileID: 0}
 --- !u!1 &3776640938628225695
 GameObject:
   m_ObjectHideFlags: 0
