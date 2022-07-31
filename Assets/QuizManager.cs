@@ -11,7 +11,7 @@ public class QuizManager : MonoBehaviour
     public int currentQuestion = 0;
     public AnswerScript answerScript;
 
-    //private GameObject continueButton;
+    public GameObject continueButton;
 
     public TMP_Text QuestionTxt;
 
@@ -37,11 +37,10 @@ public class QuizManager : MonoBehaviour
 
     public void correct()
     {
-        if (currentQuestion < 0)
+        if (QnA.Count == 1)
         {
             Debug.Log("You Win");
-            //continueButton.SetActive(true);
-
+            continueButton.SetActive(true);
         }
         else
         {
@@ -69,7 +68,5 @@ public class QuizManager : MonoBehaviour
     {
         QuestionTxt.text = QnA[currentQuestion].question;
         setAnswers();
-
-
     }
 }

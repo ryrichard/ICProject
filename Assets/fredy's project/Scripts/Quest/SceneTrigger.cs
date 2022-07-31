@@ -6,8 +6,13 @@ public class SceneTrigger : MonoBehaviour
 {
     [SerializeField] string SceneName;
 
+    static int loadCount = 0;
     public void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(SceneName);
+        if(loadCount < 1)
+        {
+            loadCount ++;
+            SceneManager.LoadScene(SceneName);
+        }
     }
 }
