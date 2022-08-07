@@ -9,25 +9,29 @@ public class AnswerScript : MonoBehaviour
     public QuizManager quizManager;
     public GameObject wrongWindow;
     public AnswerScript answerScript;
+    public GameObject button;
 
     public float time = 5f;
-
-   
 
     public void Answer()
     {
         if (isCorrect)
         {
-            quizManager.correct();
+            StartCoroutine(correctIndicator());
         }
         else
         {
             Debug.Log("Wrong Answer");
             wrongWindowOpen();
-            
-           
-           
         }
+    }
+
+    IEnumerator correctIndicator()
+    {
+        GetComponent<Image>().color = Color.green;
+        yield return new WaitForSeconds(3);
+        GetComponent<Image>().color = Color.white;
+        quizManager.correct();
     }
 
     public void wrongWindowOpen()

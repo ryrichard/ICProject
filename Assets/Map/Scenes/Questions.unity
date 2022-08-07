@@ -343,6 +343,7 @@ MonoBehaviour:
   quizManager: {fileID: 2050843441}
   wrongWindow: {fileID: 868807942}
   answerScript: {fileID: 0}
+  button: {fileID: 78184084}
   time: 5
 --- !u!114 &78184090
 MonoBehaviour:
@@ -1330,6 +1331,7 @@ MonoBehaviour:
   quizManager: {fileID: 2050843441}
   wrongWindow: {fileID: 868807942}
   answerScript: {fileID: 0}
+  button: {fileID: 962188530}
   time: 5
 --- !u!114 &962188536
 MonoBehaviour:
@@ -1898,6 +1900,7 @@ MonoBehaviour:
   quizManager: {fileID: 2050843441}
   wrongWindow: {fileID: 868807942}
   answerScript: {fileID: 0}
+  button: {fileID: 1192189380}
   time: 5
 --- !u!114 &1192189386
 MonoBehaviour:
@@ -2111,7 +2114,8 @@ MonoBehaviour:
   isCorrect: 0
   quizManager: {fileID: 2050843441}
   wrongWindow: {fileID: 868807942}
-  answerScript: {fileID: 0}
+  answerScript: {fileID: 1373168071}
+  button: {fileID: 0}
   time: 5
 --- !u!114 &1373168072
 MonoBehaviour:
@@ -2500,6 +2504,7 @@ MonoBehaviour:
   quizManager: {fileID: 2050843441}
   wrongWindow: {fileID: 868807942}
   answerScript: {fileID: 0}
+  button: {fileID: 1516457103}
   time: 5
 --- !u!114 &1516457109
 MonoBehaviour:
@@ -3440,6 +3445,7 @@ MonoBehaviour:
   quizManager: {fileID: 2050843441}
   wrongWindow: {fileID: 868807942}
   answerScript: {fileID: 0}
+  button: {fileID: 2107300227}
   time: 5
 --- !u!114 &2107300233
 MonoBehaviour:
