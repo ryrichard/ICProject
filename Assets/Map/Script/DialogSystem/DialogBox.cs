@@ -28,7 +28,7 @@ public class DialogBox : MonoBehaviour
     private GameObject wiz, kni;
     //private GameObject kni2;
 
-    BoxCollider bc;
+    public BoxCollider bc;
     
 
     private void Awake()
