@@ -69,13 +69,17 @@ public class QuestItemLetter : MonoBehaviour
 
     public void ItemPickUpUpdate()
     {
+        
         Debug.Log("ItemPickUpLetterUpdate called");
+        Debug.Log("Quest Event Status is: " + qEvent.status);
+        Debug.Log("CURRENT Events Status is: " + QuestEvent.EventStatus.current);
+        //check to see if its the current event
         if (qEvent.status != QuestEvent.EventStatus.current) return;
         else
         {
             Debug.Log("INSIDE ItemPickUpLetterUpdate");
             this.transform.parent = null;
-            Destroy(letter);
+            Destroy(letter); 
             //to update these variables in the event manager
             qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             cButton.UpdateImage(QuestEvent.EventStatus.done);
@@ -88,11 +92,11 @@ public class QuestItemLetter : MonoBehaviour
     {
         obj.GetComponent<Rigidbody>().useGravity = false;
         obj.GetComponent<Rigidbody>().freezeRotation = true;
-        obj.GetComponent<Rigidbody>().isKinematic = true; //makes the rigidbody not be acted upon by forces
-        this.transform.position = obj.transform.position;
-        this.transform.rotation = obj.transform.rotation;
-        this.transform.parent = obj.transform;
-        this.GetComponent<Rigidbody>().useGravity = false;
+        obj.GetComponent<Rigidbody>().isKinematic = false; //makes the rigidbody not be acted upon by forces
+        letter.transform.position = obj.transform.position;
+        letter.transform.rotation = obj.transform.rotation;
+        letter.transform.parent = obj.transform;
+        letter.GetComponent<Rigidbody>().useGravity = false;
         
     }
 

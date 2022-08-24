@@ -5,9 +5,9 @@ using UnityEngine;
 public class Mailbox : MonoBehaviour
 {
     // Start is called before the first frame update
-    private QuestItemLetter qil;
+    public QuestItemLetter qil;
 
-    private void Awake()
+    public void Awake()
     {
         qil = FindObjectOfType<QuestItemLetter>();
     }
