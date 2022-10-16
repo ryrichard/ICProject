@@ -445,6 +445,7 @@ GameObject:
   - component: {fileID: 4905199466064581553}
   - component: {fileID: 8577630392723589520}
   - component: {fileID: 2621455711743789176}
+  - component: {fileID: 6483752103790799893}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -524,11 +525,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad44793308f444debdc7f9df9a4ee6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armor: {fileID: 0}
   quest:
     QuestIsActive: 0
     title: 
     description: 
+--- !u!114 &6483752103790799893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271976884929911663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b31216d4787476787c88d90e93d12d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271976885216817180
 GameObject:
   m_ObjectHideFlags: 0
