@@ -22,7 +22,7 @@ using UnityEngine;
 /// <summary>
 /// Sends messages to gazed GameObject.
 /// </summary>
-public class CameraPointer : MonoBehaviour
+public class testpointer : MonoBehaviour
 {
     private const float _maxDistance = 100;
     private GameObject _gazedAtObject = null;
@@ -55,7 +55,15 @@ public class CameraPointer : MonoBehaviour
             _gazedAtObject = null;
         }
 
-            if (_gazedAtObject)
-                _gazedAtObject.SendMessage("OnPointerClick", SendMessageOptions.DontRequireReceiver);
+        if (_gazedAtObject)
+        {
+            StartCoroutine(timer());
+            _gazedAtObject.SendMessage("OnPointerClick", SendMessageOptions.DontRequireReceiver);
+        }
+    }
+
+    IEnumerator timer()
+    {
+        yield return new WaitForSeconds(4);
     }
 }
