@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 //This class checks whether the player has arrived to a location
-public class QuestLocation : MonoBehaviour
+public class QuestLocationCastle : MonoBehaviour
 {
-    public static QuestLocation ql
+    public static QuestLocationCastle qlc
     {
         private set;
         get;
@@ -16,40 +14,40 @@ public class QuestLocation : MonoBehaviour
     private Quest_Manger qManager;
     public Checkmark cButton;
     public Player player;
-   
+
     public string data = null;
 
     private void Awake()
     {
-       
-       
-        if (ql != null && ql != this)
+
+
+        if (qlc != null && qlc != this)
         {
-            //keeps the location of the object from the scence that we're changing too
-            ql.gameObject.transform.position = this.gameObject.transform.position;
-            ql.data = this.data;
+            //keeps the position of the object from the scence that we're changing too
+            qlc.gameObject.transform.position = this.gameObject.transform.position;
+            qlc.data = this.data;
 
             Destroy(gameObject);
         }
         else
         {
-            ql = this;
+            qlc = this;
             DontDestroyOnLoad(gameObject);
         }
-            
+
     }
 
     private void Start()
     {
-        GameObject.DontDestroyOnLoad(ql);
+        GameObject.DontDestroyOnLoad(qlc);
         qManager = FindObjectOfType<Quest_Manger>();
-        
+
 
     }
-    
+
     private void Update()
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Village"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Castle2"))
         {
             //qManager = FindObjectOfType<Quest_Manger>();
             player = FindObjectOfType<Player>();
@@ -58,7 +56,7 @@ public class QuestLocation : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-       
+
         //if this object collides with anything else that is not the player, dont do anything
         if (collision.gameObject.tag != "Player") return;
 
@@ -67,14 +65,14 @@ public class QuestLocation : MonoBehaviour
         else
         {
             //to update these variables in the event manager
-            Debug.Log("Location Trigger");
+            Debug.Log("Location TriggerCastle");
             qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             cButton.UpdateImage(QuestEvent.EventStatus.done);
             qManager.UpdateQuestOnCompletion(qEvent);
         }
-        
 
-        
+
+
     }
 
     //set up when creating locations
@@ -85,12 +83,12 @@ public class QuestLocation : MonoBehaviour
         cButton = ck;
         //set up link between event and button
         qe.button = cButton;
-        
+
     }
 
     void OnDestroy()
     {
         Debug.Log("QuestLocation was destroyed");
     }
-    
+
 }
