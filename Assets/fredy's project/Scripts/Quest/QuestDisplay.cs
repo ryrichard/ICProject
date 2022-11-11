@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 public class QuestDisplay : MonoBehaviour
 {
-   
     public static QuestDisplay qd
     {
         private set;
@@ -22,15 +21,7 @@ public class QuestDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Museum"))
-        {
-            Destroy(qd);
-        }
-        else
-        {
-            GameObject.DontDestroyOnLoad(qd);
-        }
-        
+        GameObject.DontDestroyOnLoad(qd);
     }
 
     

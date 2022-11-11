@@ -10,7 +10,9 @@ public class QuizManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestion = 0;
     public AnswerScript answerScript;
+
     public GameObject continueButton;
+
     public TMP_Text QuestionTxt;
 
     

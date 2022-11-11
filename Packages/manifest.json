@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "com.elringus.unitygoogledrive": "https://github.com/Elringus/UnityGoogleDrive.git#package",
-    "com.google.ar.core.arfoundation.extensions": "https://github.com/google-ar/arcore-unity-extensions.git",
     "com.google.xr.cardboard": "https://github.com/joaoborks/cardboard-xr-plugin.git",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.collab-proxy": "1.7.1",
