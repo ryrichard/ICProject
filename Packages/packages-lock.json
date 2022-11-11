@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.elringus.unitygoogledrive": {
+      "version": "https://github.com/Elringus/UnityGoogleDrive.git#package",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "fe300dd53763b8304df29a1d1b5a0b299ba01650"
+    },
     "com.google.ar.core.arfoundation.extensions": {
       "version": "https://github.com/google-ar/arcore-unity-extensions.git",
       "depth": 0,
