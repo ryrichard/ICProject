@@ -15,7 +15,7 @@ C:/Users/raghe/Documents/GitHub/ICProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53828
+60436
 Successfully changed project path to: C:/Users/raghe/Documents/GitHub/ICProject
 C:/Users/raghe/Documents/GitHub/ICProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/raghe/Documents/GitHub/ICProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 65.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 46.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.8f1 (b30333d56e81)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -63,40 +63,40 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56192
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004742 seconds.
+Registered in 0.005519 seconds.
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 46.88 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 46.66 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.507 seconds
+- Completed reload, in  0.441 seconds
 Domain Reload Profiling:
-	ReloadAssembly (507ms)
-		BeginReloadAssembly (119ms)
+	ReloadAssembly (441ms)
+		BeginReloadAssembly (52ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
 		EndReloadAssembly (314ms)
-			LoadAssemblies (117ms)
+			LoadAssemblies (51ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (71ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (18ms)
 			SetupLoadedEditorAssemblies (189ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (47ms)
+				InitializePlatformSupportModulesInManaged (48ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (47ms)
 				BeforeProcessingInitializeOnLoad (1ms)
@@ -108,53 +108,52 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002143 seconds.
-Android Extension - Scanning For ADB Devices 622 ms
+Registered in 0.002166 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 44.83 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 44.82 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Completed reload, in  2.355 seconds
+- Completed reload, in  0.891 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2356ms)
-		BeginReloadAssembly (76ms)
+	ReloadAssembly (892ms)
+		BeginReloadAssembly (192ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (2199ms)
-			LoadAssemblies (1589ms)
+			CreateAndSetChildDomain (130ms)
+		EndReloadAssembly (621ms)
+			LoadAssemblies (55ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (139ms)
+			SetupTypeCache (130ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (402ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (371ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (45ms)
 				BeforeProcessingInitializeOnLoad (58ms)
-				ProcessInitializeOnLoadAttributes (255ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				ProcessInitializeOnLoadAttributes (227ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2771 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 100 unused Assets / (120.8 KB). Loaded Objects now: 3234.
-Memory consumption went from 115.7 MB to 115.6 MB.
-Total: 2.760000 ms (FindLiveObjects: 0.178500 ms CreateObjectMapping: 0.073400 ms MarkObjects: 2.336500 ms  DeleteObjects: 0.170700 ms)
+Unloading 2772 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 100 unused Assets / (97.7 KB). Loaded Objects now: 3236.
+Memory consumption went from 115.9 MB to 115.8 MB.
+Total: 2.594400 ms (FindLiveObjects: 0.163600 ms CreateObjectMapping: 0.075900 ms MarkObjects: 2.182400 ms  DeleteObjects: 0.171900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,26 +165,14 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1817475.458810 seconds.
-  path: Assets/cardboard-xr-samples/hellocardboard-unity/Scenes
-  artifactKey: Guid(6532d9b74af7e42dd9bfe5affd1bba03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/cardboard-xr-samples/hellocardboard-unity/Scenes using Guid(6532d9b74af7e42dd9bfe5affd1bba03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb29c064eac577a2f575f2348dd1d532') in 0.010217 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/cardboard-xr-samples/hellocardboard-unity/Scenes/VrMode.unity
-  artifactKey: Guid(4812ec05e87b8414abcdfe0d625c0e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/cardboard-xr-samples/hellocardboard-unity/Scenes/VrMode.unity using Guid(4812ec05e87b8414abcdfe0d625c0e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e45efb759bfdec55473093b25b5d2fc1') in 0.005333 seconds 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 2.31 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 2.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (85.5 KB). Loaded Objects now: 3234.
-Memory consumption went from 57.0 MB to 56.9 MB.
-Total: 2.301200 ms (FindLiveObjects: 0.150600 ms CreateObjectMapping: 0.061200 ms MarkObjects: 2.015600 ms  DeleteObjects: 0.073300 ms)
+Unloading 19 unused Assets / (85.2 KB). Loaded Objects now: 3236.
+Memory consumption went from 57.1 MB to 57.0 MB.
+Total: 2.333000 ms (FindLiveObjects: 0.152600 ms CreateObjectMapping: 0.061500 ms MarkObjects: 2.034700 ms  DeleteObjects: 0.083500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -197,79 +184,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 130.193036 seconds.
-  path: Assets/fredy's project/TSA Resources/TSA Organization pics/alexa lopez.jpeg
-  artifactKey: Guid(53da20ec6d4074d279d10b33958429f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/fredy's project/TSA Resources/TSA Organization pics/alexa lopez.jpeg using Guid(53da20ec6d4074d279d10b33958429f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3617ee37e922acce5c4211ae3f8e7b') in 0.088929 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/fredy's project/TSA Resources/Objects/PolyWorkshop/CardboardBoxesSet/Prefabs/cardboardBox_03.prefab
-  artifactKey: Guid(efbc7aaed080d31418251812fc4cfad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/fredy's project/TSA Resources/Objects/PolyWorkshop/CardboardBoxesSet/Prefabs/cardboardBox_03.prefab using Guid(efbc7aaed080d31418251812fc4cfad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd1fb2e1327b7dbd4bdccd1e0c21060') in 0.177580 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/fredy's project/TSA Resources/Objects/PolyWorkshop/CardboardBoxesSet/Models/cardboardBox_02.fbx
-  artifactKey: Guid(8a07748a10d783d4abb6dbd7272e6ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/fredy's project/TSA Resources/Objects/PolyWorkshop/CardboardBoxesSet/Models/cardboardBox_02.fbx using Guid(8a07748a10d783d4abb6dbd7272e6ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d097b42042836ed00264b355ba4a7ba') in 0.069788 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/XR/XRGeneralSettings.asset
-  artifactKey: Guid(0b71a6cdf21ab4caca348838dc75c4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/XR/XRGeneralSettings.asset using Guid(0b71a6cdf21ab4caca348838dc75c4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0af1b135d8bd6d60a8a5d247fb55b663') in 0.015465 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/XR/Loaders/XR Loader.asset
-  artifactKey: Guid(34ffdb5ccbc02c2449648d8181cbf018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/XR/Loaders/XR Loader.asset using Guid(34ffdb5ccbc02c2449648d8181cbf018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632997212a1184d3f06ec969a65d734e') in 0.006166 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/fredy's project/TSA Resources/Conveyor/XR/XRGeneralSettings.asset
-  artifactKey: Guid(adfe6cf182aca364a9ee4d709ffdb853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/fredy's project/TSA Resources/Conveyor/XR/XRGeneralSettings.asset using Guid(adfe6cf182aca364a9ee4d709ffdb853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14af16395337ab0adfed00a9cda04e1c') in 0.002861 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/cardboard-xr-samples/hellocardboard-unity/Prefabs/XRCardboardRig.prefab
-  artifactKey: Guid(186741bf17cbb0e4fa3ef06daa1f190f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/cardboard-xr-samples/hellocardboard-unity/Prefabs/XRCardboardRig.prefab using Guid(186741bf17cbb0e4fa3ef06daa1f190f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbfd76e6098dbb3b67e6968f8a9cd91c') in 0.015135 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/fredy's project/TSA Resources/Objects/PolyWorkshop/CardboardBoxesSet/Prefabs/cardboardBox_02.prefab
-  artifactKey: Guid(23fc59362ba1e264eb5b636821ad929a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/fredy's project/TSA Resources/Objects/PolyWorkshop/CardboardBoxesSet/Prefabs/cardboardBox_02.prefab using Guid(23fc59362ba1e264eb5b636821ad929a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6bae208b2e7ccbf9c45d2bbdda33be') in 0.029421 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/fredy's project/TSA Resources/Conveyor/vrMuseum/prefabs/models/DioramaPlatform.FBX
-  artifactKey: Guid(08969b25707376440be2c2e2b6fcd486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/fredy's project/TSA Resources/Conveyor/vrMuseum/prefabs/models/DioramaPlatform.FBX using Guid(08969b25707376440be2c2e2b6fcd486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed0697c30d7f56ff193de4af8ea887ac') in 0.038078 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/cardboard-xr-samples/hellocardboard-unity/Data/XRCardboardInputSettings.asset
-  artifactKey: Guid(cb8439dae3cf5c0449482769d029f696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/cardboard-xr-samples/hellocardboard-unity/Data/XRCardboardInputSettings.asset using Guid(cb8439dae3cf5c0449482769d029f696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6619b6337afe3d96e1773b9b03a1a154') in 0.006145 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/SpeechAndText/Sample/box.png
-  artifactKey: Guid(ee1663a3c3e75d648a0dcf7e375ef189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SpeechAndText/Sample/box.png using Guid(ee1663a3c3e75d648a0dcf7e375ef189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b260302443638712e75dd4bbeed7faa') in 0.016459 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/fredy's project/TSA Resources/Objects/PolyWorkshop/CardboardBoxesSet/Models/cardboardBox_03.fbx
-  artifactKey: Guid(8bf2bd9ec7d102c48a617d4ba4efbc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/fredy's project/TSA Resources/Objects/PolyWorkshop/CardboardBoxesSet/Models/cardboardBox_03.fbx using Guid(8bf2bd9ec7d102c48a617d4ba4efbc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '783e08b112a64fcda47898d8a4171f5f') in 0.013626 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

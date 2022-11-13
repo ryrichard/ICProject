@@ -12,27 +12,32 @@ public class AnswerScript : MonoBehaviour
 
     public float time = 5f;
 
-   
 
     public void Answer()
     {
         if (isCorrect)
         {
-            quizManager.correct();
+            StartCoroutine(correct());
         }
         else
         {
             Debug.Log("Wrong Answer");
             wrongWindowOpen();
             
-           
-           
         }
     }
 
     public void wrongWindowOpen()
     {
         StartCoroutine(wrongWindowPanel());
+    }
+
+    IEnumerator correct()
+    {
+        gameObject.GetComponent<Image>().color = Color.green;
+        yield return new WaitForSeconds(3);
+        gameObject.GetComponent<Image>().color = Color.white;
+        quizManager.correct();
     }
 
     IEnumerator wrongWindowPanel()
