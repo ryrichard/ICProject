@@ -1,5 +1,30 @@
 {
   "dependencies": {
+    "com.elringus.unitycommon": {
+      "version": "https://github.com/Elringus/UnityCommon.git#package",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "966102a6ea499683b3b96f5cbc65689c13944858"
+    },
+    "com.elringus.unitygoogledrive": {
+      "version": "https://github.com/Elringus/UnityGoogleDrive.git#package",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "fe300dd53763b8304df29a1d1b5a0b299ba01650"
+    },
+    "com.google.ar.core.arfoundation.extensions": {
+      "version": "https://github.com/google-ar/arcore-unity-extensions.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.xr.arfoundation": "4.1.5",
+        "com.unity.xr.arcore": "4.1.5",
+        "com.unity.xr.arkit": "4.1.5"
+      },
+      "hash": "55208a5317c2402e55ed7f931c16288d6a2b7756"
+    },
     "com.google.xr.cardboard": {
       "version": "https://github.com/joaoborks/cardboard-xr-plugin.git",
       "depth": 0,
