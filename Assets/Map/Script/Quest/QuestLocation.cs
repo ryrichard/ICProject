@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,7 +25,7 @@ public class QuestLocation : MonoBehaviour
        
         if (ql != null && ql != this)
         {
-            //keeps the position of the object from the scence that we're changing too
+            //keeps the location of the object from the scence that we're changing too
             ql.gameObject.transform.position = this.gameObject.transform.position;
             ql.data = this.data;
 
@@ -65,7 +67,7 @@ public class QuestLocation : MonoBehaviour
         else
         {
             //to update these variables in the event manager
-            Debug.Log("Location Trigger Castle");
+            Debug.Log("Location Trigger");
             qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             cButton.UpdateImage(QuestEvent.EventStatus.done);
             qManager.UpdateQuestOnCompletion(qEvent);

@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
+using UnityGoogleDrive;
 
 public struct Data
 {
@@ -13,20 +14,26 @@ public class imageJSON : MonoBehaviour
 {
     [SerializeField] GameObject slide;
     private Texture2D image;
+
+    private GoogleDriveFiles.DownloadTextureRequest request;
+    private string fileId = "1VjsL2vthMaS7AZxDK7qaqIevmlTVBfZA";
+
     //private Texture2D [] images;
     //public GameObject[] slides;
 
     //private Sprite websprite;
-    
-    
+
+
     // URL to the Json file 
-    string jsonURL = "https://drive.google.com/uc?export=download&id=1iWvScmDZXRw9W6Ri1qVhuCUuVCNnkL6D";
+    //string jsonURL = "https://drive.google.com/uc?export=download&id=1iWvScmDZXRw9W6Ri1qVhuCUuVCNnkL6D";
 
     void Start()
     {
-        StartCoroutine(GetData(jsonURL));
+        //StartCoroutine(GetData(jsonURL));
+        DownloadTexture();
     }
 
+    /*
     //It gets the Json 
     IEnumerator GetData(string url)
     {
@@ -72,12 +79,9 @@ public class imageJSON : MonoBehaviour
         }
 
         request.Dispose();// it closes the url request 
-    }
+    }*/
 
-   Sprite CreateSpriteFromTexture (Texture2D texture) //creates a new sprite from a texture
-    {
-        return Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
-    }
+  
 
     /*
     void populateImages(Texture2D [] images, GameObject [] slides)
@@ -92,6 +96,27 @@ public class imageJSON : MonoBehaviour
     }*/
 
 
+    private void DownloadTexture()
+    {
+        request = GoogleDriveFiles.DownloadTexture(fileId, true);
+        request.Send().OnDone += RenderImage;
+    }
 
-   
+
+    private void RenderImage(UnityGoogleDrive.Data.TextureFile textureFile)
+    {
+        var texture = textureFile.Texture;
+        //var rect = new Rect(0, 0, texture.width, texture.height);
+        //image2.sprite = Sprite.Create(texture, rect, Vector2.one * .5f);
+        Sprite websprite = CreateSpriteFromTexture(texture);
+        slide.GetComponent<Image>().sprite = websprite;
+
+    }
+
+    Sprite CreateSpriteFromTexture(Texture2D texture) //creates a new sprite from a texture
+    {
+        return Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
+    }
+
+
 }
