@@ -18,7 +18,6 @@ public class AnswerScript : MonoBehaviour
         if (isCorrect)
         {
             StartCoroutine(correctIndicator());
-            StartCoroutine(correct());
         }
         else
         {
@@ -38,14 +37,6 @@ public class AnswerScript : MonoBehaviour
     public void wrongWindowOpen()
     {
         StartCoroutine(wrongWindowPanel());
-    }
-
-    IEnumerator correct()
-    {
-        gameObject.GetComponent<Image>().color = Color.green;
-        yield return new WaitForSeconds(3);
-        gameObject.GetComponent<Image>().color = Color.white;
-        quizManager.correct();
     }
 
     IEnumerator wrongWindowPanel()
