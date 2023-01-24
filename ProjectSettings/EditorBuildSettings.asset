@@ -5,15 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-<<<<<<< HEAD
   - enabled: 1
     path: Assets/Map/Scenes/LevelLayout_1.unity
     guid: cc3dd6d2c27f34380b4601c9fb3da69a
-=======
-  - enabled: 0
-    path: Assets/Map/Scenes/LevelLayout.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
->>>>>>> Ragheeb
   - enabled: 0
     path: Assets/Map/Scenes/TestRoom.unity
     guid: 4ae402b20fb974e90a9efe64e923271b
