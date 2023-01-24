@@ -20,6 +20,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Sends messages to gazed GameObject.
@@ -58,12 +59,12 @@ public class testpointer : MonoBehaviour
                 // New GameObject.
                 if (_gazedAtObject)
                 {
-                    _gazedAtObject.SendMessage("OnPointerExit", SendMessageOptions.DontRequireReceiver);
+                    //_gazedAtObject.SendMessage("OnPointerExit", SendMessageOptions.DontRequireReceiver);
                     crosshair.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
                 }
                 _gazedAtObject = hit.transform.gameObject;
-                _gazedAtObject.SendMessage("OnPointerEnter", SendMessageOptions.DontRequireReceiver);
-                if(_gazedAtObject.GetComponent<ObjectController>() || _gazedAtObject.GetComponent<Teleportation>() || _gazedAtObject.GetComponent<Button>())
+                //_gazedAtObject.SendMessage("OnPointerEnter", SendMessageOptions.DontRequireReceiver);
+                if(_gazedAtObject.GetComponent<EventTrigger>() || (_gazedAtObject.GetComponent<ObjectController>() || (_gazedAtObject.GetComponent<Teleportation>() || _gazedAtObject.GetComponent<Button>())))
                 {
                     crosshair.GetComponent<Image>().color = new Color32(0, 255, 6, 255);
                 }
@@ -74,15 +75,59 @@ public class testpointer : MonoBehaviour
             // No GameObject detected in front of the camera.
             if (_gazedAtObject)
             {
-                _gazedAtObject.SendMessage("OnPointerExit", SendMessageOptions.DontRequireReceiver);
+                //S_gazedAtObject.SendMessage("OnPointerExit", SendMessageOptions.DontRequireReceiver);
                 crosshair.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
             }
             _gazedAtObject = null;
         }
+        
+        if(Input.GetKeyDown("space") && Application.isEditor)
+        {
+            if (_gazedAtObject != null)
+            {
+                if (_gazedAtObject.GetComponent<EventTrigger>())
+                {
+                    PointerEventData data = null;
+                    _gazedAtObject.GetComponent<EventTrigger>().OnPointerClick(data);
+                }
+                else if (_gazedAtObject.GetComponent<Teleportation>())
+                {
+                    _gazedAtObject.GetComponent<Teleportation>().onclick();
+                }
+                else if (_gazedAtObject.GetComponent<Button>())
+                {
+                    _gazedAtObject.GetComponent<Button>().onClick.Invoke();
+                }
+                else if (_gazedAtObject.GetComponent<ObjectController>())
+                {
+                    _gazedAtObject.GetComponent<ObjectController>().OnClick();
+                }
+            }
+
+        }
 
         if (Google.XR.Cardboard.Api.IsTriggerPressed)
         {
-                _gazedAtObject.SendMessage("OnPointerClick", SendMessageOptions.DontRequireReceiver);
+            if (_gazedAtObject != null)
+            {
+                if (_gazedAtObject.GetComponent<EventTrigger>())
+                {
+                    PointerEventData data = null;
+                    _gazedAtObject.GetComponent<EventTrigger>().OnPointerClick(data);
+                }
+                else if (_gazedAtObject.GetComponent<Teleportation>())
+                {
+                    _gazedAtObject.GetComponent<Teleportation>().onclick();
+                }
+                else if (_gazedAtObject.GetComponent<Button>())
+                {
+                    _gazedAtObject.GetComponent<Button>().onClick.Invoke();
+                }
+                else if (_gazedAtObject.GetComponent<ObjectController>())
+                {
+                    _gazedAtObject.GetComponent<ObjectController>().OnClick();
+                }
+            }
         }
     }
 

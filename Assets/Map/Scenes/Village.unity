@@ -1292,6 +1292,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4084159070994118306, guid: 0d3a26e1931ced64b8e81727423758f6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4084159071662773139, guid: 0d3a26e1931ced64b8e81727423758f6, type: 3}
       propertyPath: m_Name
       value: Player (click)
@@ -7473,6 +7477,10 @@ PrefabInstance:
     - target: {fileID: 6271057726645526743, guid: 4cdfc516115ee47659be10c73ccd6a15, type: 3}
       propertyPath: m_Name
       value: Quest Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271057726645526743, guid: 4cdfc516115ee47659be10c73ccd6a15, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6271057726645526743, guid: 4cdfc516115ee47659be10c73ccd6a15, type: 3}
       propertyPath: m_TagString

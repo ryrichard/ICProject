@@ -187,7 +187,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4084159070468531267}
-  m_LocalRotation: {x: -0, y: 0.42622235, z: -0, w: -0.90461844}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.000003020812, y: 0, z: -0.000003992825}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -197,7 +197,7 @@ Transform:
   - {fileID: 4084159071442991329}
   m_Father: {fileID: 4084159071662773149}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -410.456, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &4084159070468531276
 Camera:
   m_ObjectHideFlags: 0
@@ -506,6 +506,7 @@ GameObject:
   - component: {fileID: 9185474536924797773}
   - component: {fileID: 5504038544468410732}
   - component: {fileID: 2236829503061164164}
+  - component: {fileID: 7338783782809810125}
   m_Layer: 0
   m_Name: Player (click)
   m_TagString: Player
@@ -590,6 +591,20 @@ MonoBehaviour:
     QuestIsActive: 0
     title: 
     description: 
+--- !u!114 &7338783782809810125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4084159071662773139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037386deeeffe8a43988ee3186972eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensitivity: 2
+  yRotationLimit: 88
 --- !u!1 &4084159071802654446
 GameObject:
   m_ObjectHideFlags: 0
