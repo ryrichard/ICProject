@@ -24,7 +24,7 @@ using UnityEngine;
 /// </summary>
 public class CameraPointer : MonoBehaviour
 {
-    private const float _maxDistance = 100;
+    private const float _maxDistance = 10;
     private GameObject _gazedAtObject = null;
 
     /// <summary>
@@ -55,7 +55,11 @@ public class CameraPointer : MonoBehaviour
             _gazedAtObject = null;
         }
 
+        // Checks for screen touches.
+        if (Google.XR.Cardboard.Api.IsTriggerPressed)
+        {
             if (_gazedAtObject)
                 _gazedAtObject.SendMessage("OnPointerClick", SendMessageOptions.DontRequireReceiver);
+        }
     }
 }

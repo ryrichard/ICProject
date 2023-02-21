@@ -82,7 +82,6 @@ public class XRCardboardInputModule : PointerInputModule
             ExecuteEvents.ExecuteHierarchy(currentTarget, pointerEventData, ExecuteEvents.pointerClickHandler);
             currentTargetClickTime = float.MaxValue;
             onClick?.Invoke();
-            Debug.Log("Click");
             StopHovering();
         }
     }
