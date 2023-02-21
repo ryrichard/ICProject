@@ -20,6 +20,7 @@ TagManager:
   - Resources
   - Castle
   - Guard2
+  - crosshair
   layers:
   - Default
   - TransparentFX
