@@ -67,8 +67,6 @@ public class XRCardboardStartup : MonoBehaviour
             Api.ReloadDeviceParams();
         }
 
-        #if !UNITY_EDITOR
         Api.UpdateScreenParams();
-        #endif
     }
 }
