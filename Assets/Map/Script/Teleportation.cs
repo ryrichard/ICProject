@@ -66,6 +66,11 @@ public class Teleportation : MonoBehaviour
         TeleportPlayer();
     }
 
+    public void onclick()
+    {
+        TeleportPlayer();
+    }
+
     private void TeleportPlayer()
     {
         if (!exit)
