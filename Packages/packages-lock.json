@@ -60,7 +60,11 @@
     },
     "com.unity.nuget.newtonsoft-json": {
       "version": "3.0.2",
+<<<<<<< Updated upstream
       "depth": 2,
+=======
+      "depth": 1,
+>>>>>>> Stashed changes
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
