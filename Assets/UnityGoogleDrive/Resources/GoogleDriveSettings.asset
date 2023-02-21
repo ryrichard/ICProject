@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eca7773dbc7f5b47878b382f321f62e, type: 3}
+  m_Name: GoogleDriveSettings
+  m_EditorClassIdentifier: 
+  genericClientCredentials:
+    client_id: 629622242920-i6227pe41q2e8r4df2394feg81rogqfk.apps.googleusercontent.com
+    project_id: icproject-367600
+    auth_uri: https://accounts.google.com/o/oauth2/auth
+    token_uri: https://oauth2.googleapis.com/token
+    auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+    client_secret: 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
+    redirect_uris:
+    - http://localhost
+    - https://drive.google.com/drive/u/0/my-drive
+  uriSchemeClientCredentials:
+    clientId: 629622242920-294h41obj2obd7netrecb0th8sj7ercs.apps.googleusercontent.com
+    reversedClientId: com.googleusercontent.apps.629622242920-294h41obj2obd7netrecb0th8sj7ercs
+    plistVersion: 1
+    bundleId: com.testcompany.icproject
+  accessScopes:
+  - https://www.googleapis.com/auth/drive
+  - https://www.googleapis.com/auth/drive.appdata
+  loopbackUri: http://localhost
+  loopbackResponseHtml: <html><h1>Please return to the app.</h1></html>
+  accessTokenPrefsKey: GoogleDriveAccessToken
+  refreshTokenPrefsKey: GoogleDriveRefreshToken
