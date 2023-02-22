@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class OpenCastleDoor : MonoBehaviour
@@ -9,23 +11,19 @@ public class OpenCastleDoor : MonoBehaviour
 
     float openDoorY = 5.0f;
 
-    public GameObject telepad;
+    public Teleportation telepad; 
 
-    //public DialogBox db;
-
-    
     private void Awake()
     {
         castleDoor = this.gameObject;
         castleDoorPos = castleDoor.transform.position;
-        castleDoor.GetComponent<BoxCollider>().enabled = true;
+        castleDoor.GetComponent<BoxCollider>().enabled = false;
         
         //CloseDoor();
     }
     private void Update()
     {
         //castleDoor.GetComponent<OpenCastleDoor>().enabled = false;
-        ActivateTelepad();
     }
 
     public void OnPointerLook()
@@ -41,6 +39,7 @@ public class OpenCastleDoor : MonoBehaviour
             OpenDoor();
             isOpen = true;
         }
+        
         else
         {
             CloseDoor();
@@ -65,13 +64,5 @@ public class OpenCastleDoor : MonoBehaviour
         //updates local potition
         //castleDoorPos = new Vector3(castleDoorPos.x, openDoorY, castleDoorPos.z);
 
-    }
-
-    void ActivateTelepad()
-    {
-        if (isOpen)
-            telepad.SetActive(true);
-        else
-            telepad.SetActive(false);
     }
 }
