@@ -67,14 +67,16 @@ public class QuestItemResources : MonoBehaviour
     public void ItemPickUp()
     {
         Debug.Log("Item Resources called");
+        Debug.Log(this.qEvent.status);
         if (qEvent.status != QuestEvent.EventStatus.current) return;
         else
         {
             Destroy(resources);
             //to update these variables in the event manager
-            qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             cButton.UpdateImage(QuestEvent.EventStatus.done);
+            qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             qManager.UpdateQuestOnCompletion(qEvent);
+            Debug.Log("Resources Updated");
         }
 
     }

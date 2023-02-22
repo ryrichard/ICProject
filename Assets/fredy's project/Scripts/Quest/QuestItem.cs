@@ -72,8 +72,8 @@ public class QuestItem : MonoBehaviour
         {
             Destroy(armor);
             //to update these variables in the event manager
-            qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             cButton.UpdateImage(QuestEvent.EventStatus.done);
+            qEvent.UpdateQuestEvent(QuestEvent.EventStatus.done);
             qManager.UpdateQuestOnCompletion(qEvent);
         }
         
