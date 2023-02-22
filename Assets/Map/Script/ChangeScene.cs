@@ -24,6 +24,7 @@ public class ChangeScene : MonoBehaviour
     {
         DataController.GetPlayerLastPosAndScene();
         SceneManager.LoadScene(SceneName);
+        Debug.Log("Moving to " + SceneName);
        
     }
 

@@ -103,11 +103,11 @@ public class Quest_Manger : MonoBehaviour
         checkMarkBox = createBox(f).GetComponent<Checkmark>();
         F.GetComponent<QuestItemResources>().SetUp(this, f, checkMarkBox);
 
-        checkMarkBox = createBox(g).GetComponent<Checkmark>();/*
+        checkMarkBox = createBox(g).GetComponent<Checkmark>();
         G.GetComponent<QuestLocation>().SetUp(this, g, checkMarkBox);
-        */
+        
       
-        Debug.Log(b.status);//check status of first button
+        Debug.Log(g.status);
         //Debug.Log(b.status);
 
 

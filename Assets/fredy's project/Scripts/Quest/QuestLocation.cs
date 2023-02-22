@@ -21,8 +21,8 @@ public class QuestLocation : MonoBehaviour
 
     private void Awake()
     {
-       
-       
+
+        
         if (ql != null && ql != this)
         {
             //keeps the location of the object from the scence that we're changing too
@@ -53,6 +53,7 @@ public class QuestLocation : MonoBehaviour
         {
             //qManager = FindObjectOfType<Quest_Manger>();
             player = FindObjectOfType<Player>();
+            
         }
     }
 

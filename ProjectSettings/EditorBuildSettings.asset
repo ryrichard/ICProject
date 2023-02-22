@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Map/Scenes/LevelLayout.unity
+    path: Assets/Map/Scenes/(old)LevelLayout.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
     path: Assets/Map/Scenes/TestRoom.unity

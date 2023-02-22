@@ -70,6 +70,7 @@ public class QuestItemLetter : MonoBehaviour
     public void ItemPickUpUpdate()
     {
         Debug.Log("ItemPickUpLetterUpdate called");
+        
         if (qEvent.status != QuestEvent.EventStatus.current) return;
         else
         {

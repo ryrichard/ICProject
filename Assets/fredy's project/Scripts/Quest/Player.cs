@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 
     public Quest quest;
     
-    private Player player;
+    public Player player;
     /*
     private void Awake()
     {
@@ -19,13 +19,15 @@ public class Player : MonoBehaviour
         else
             player = this;
     }
-
+    */
     private void Start()
     {
-        GameObject.DontDestroyOnLoad(player);
-    }*/
+        //GameObject.DontDestroyOnLoad(player);
+
+        player = FindObjectOfType<Player>();
+        player.GetComponent<Rigidbody>().centerOfMass = new Vector3(0, -0.9f, 0);
 
 
-
+    }
 
 }
