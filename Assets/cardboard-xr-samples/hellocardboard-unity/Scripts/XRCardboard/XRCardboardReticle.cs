@@ -75,12 +75,6 @@ public class XRCardboardReticle : MonoBehaviour
         reticleMaterial.color = defaultColor;
     }
 
-    public void OnClick()
-    {
-        StopHover();
-        clickRoutine = ClickFeedback();
-    }
-
     void StopHover()
     {
         if (hoverRoutine != null)
